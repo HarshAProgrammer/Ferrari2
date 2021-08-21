@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "6437631013",
+    "firebase_url": "https://ferrari-71869.firebaseio.com",
+    "project_id": "ferrari-71869",
+    "storage_bucket": "ferrari-71869.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6437631013:android:db8459a03f82774a71bbcc",
+        "android_client_info": {
+          "package_name": "com.rackluxury.ferrari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6437631013-u97gthvp4ria2k33o24djafv354h9ib2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rackluxury.ferrari",
+            "certificate_hash": "b839793a6c481d7f0d00ccfe069334cc28692cfb"
+          }
+        },
+        {
+          "client_id": "6437631013-43k02dn9ntiq3ccr41gm5mdhevtorj89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtAX_ICaVXJoxADpvYBEC9iltRmFUs8nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6437631013-43k02dn9ntiq3ccr41gm5mdhevtorj89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
