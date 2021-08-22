@@ -184,7 +184,7 @@
             android:id="@+id/tvCategoriesDetailName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ferrari_watch_name_categories_detail"
+            android:text="@string/ferrari_car_name_categories_detail"
             android:textAlignment="center"
             android:textColor="@android:color/background_dark"
             android:textSize="12sp" />

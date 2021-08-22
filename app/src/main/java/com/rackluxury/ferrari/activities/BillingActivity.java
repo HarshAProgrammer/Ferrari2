@@ -74,7 +74,7 @@ public class BillingActivity extends AppCompatActivity implements PurchasesUpdat
         setSupportActionBar(toolbar);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Buy us a Watch");
+            getSupportActionBar().setTitle("Buy us a Car");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
     }
@@ -178,7 +178,7 @@ public class BillingActivity extends AppCompatActivity implements PurchasesUpdat
                         }
                     });
                     tv.setText(R.string.success_billing);
-                    Toasty.success(BillingActivity.this, "Thank You For The Watch", Toast.LENGTH_LONG).show();
+                    Toasty.success(BillingActivity.this, "Thank You For The Car", Toast.LENGTH_LONG).show();
                 }
             }
         } catch (Exception e) {

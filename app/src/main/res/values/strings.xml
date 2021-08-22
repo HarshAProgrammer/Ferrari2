@@ -91,7 +91,7 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
     <string name="ferrari_name">Ferrari Name</string>
     <string name="ferrari_price">Ferrari Price</string>
     <string name="ferrari_description">Ferrari Description</string>
-    <string name="ferrari_watch_name_categories_detail">Ferrari Watch Name</string>
+    <string name="ferrari_car_name_categories_detail">Ferrari Watch Name</string>
     <string name="ferrari_detail_categories_description">Ferrari Detail Description</string>
     <string name="this_is_the_title_layout_video">This is the title</string>
     <string name="volume_on_off_layout_video">VolumeOnOff</string>
@@ -109,7 +109,7 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
 
 
 
-    <string name="buy_us_a_watch_nav_home">Buy Us A Watch</string>
+    <string name="buy_us_a_car_nav_home">Buy Us A Car</string>
     <string name="facts_about_us_nav_home">Facts About Us</string>
     <string name="sign_out_nav_home">SignOut</string>
     <string name="like_us_on_facebook_nav_home">Like Us On Facebook</string>
@@ -125,7 +125,7 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
     <string name="toolbar_favourite_categories">Favourites</string>
     <string name="ferrari_main_image_expensive">Ferrari Image</string>
     <string name="name_detail_expensive_detail">Ferrari Watch Name</string>
-    <string name="expensive_ferrari_watch_image_expensive_detail">Expensive Ferrari Watch</string>
+    <string name="expensive_ferrari_car_image_expensive_detail">Expensive Ferrari Watch</string>
     <string name="ferrari_detail_expensive_description">Ferrari Detail Description</string>
 
 

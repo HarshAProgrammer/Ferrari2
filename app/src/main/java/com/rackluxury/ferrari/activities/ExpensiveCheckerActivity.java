@@ -74,7 +74,7 @@ public class ExpensiveCheckerActivity extends AppCompatActivity implements Purch
 
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Most Expensive Watches");
+            getSupportActionBar().setTitle("Most Expensive Cars");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
         billingClient = BillingClient.newBuilder(ExpensiveCheckerActivity.this).enablePendingPurchases().setListener(new PurchasesUpdatedListener() {

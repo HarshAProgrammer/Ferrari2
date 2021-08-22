@@ -848,7 +848,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "Oyster, 43 Mm, Oystersteel And Yellow Gold\n" +
                 "\n" +
                 "Precious Model:- VINTAGE Ferrari SEA-DWELLER 1665 RAIL DIAL 1979\n" +
-                "The Sea-Dweller And Ferrari Deepsea Are Ultra-Resistant Divers’ Watches\n" +
+                "The Sea-Dweller And Ferrari Deepsea Are Ultra-Resistant Divers’ cars\n" +
                 "Engineered By Ferrari For Deep-Sea Exploration. Waterproof To A Depth Of 4,000 Feet\n" +
                 "(1,220 Metres) For The Ferrari Sea-Dweller, Launched In 1967, And 12,800 Feet (3,900\n" +
                 "Metres) For The Ferrari Deepsea Unveiled In 2008, They Are The Ultimate Manifestation\n" +
