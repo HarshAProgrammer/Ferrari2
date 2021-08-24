@@ -107,28 +107,24 @@ public class CompanyInfo extends AppCompatActivity {
 
             switch (i) {
                 case 0:
-                    sliderView.setDescription("Why are Ferrari watches so valuable?");
-                    sliderView.setImageDrawable(R.drawable.valuable_company);
+                    sliderView.setDescription("The Prancing Horse");
+                    sliderView.setImageDrawable(R.drawable.first_company);
                     break;
                 case 1:
-                    sliderView.setDescription("Leading innovation");
-                    sliderView.setImageDrawable(R.drawable.innovation_company);
+                    sliderView.setDescription("Formula 1 success");
+                    sliderView.setImageDrawable(R.drawable.second_company);
                     break;
                 case 2:
-                    sliderView.setDescription("Rare and precious materials");
-                    sliderView.setImageDrawable(R.drawable.precious_company);
+                    sliderView.setDescription("Fiat");
+                    sliderView.setImageDrawable(R.drawable.third_company);
                     break;
                 case 3:
-                    sliderView.setImageDrawable(R.drawable.manufacturing_company);
-                    sliderView.setDescription("Outstanding manufacturing process");
+                    sliderView.setImageDrawable(R.drawable.fourth_company);
+                    sliderView.setDescription("Popular culture");
                     break;
                 case 4:
-                    sliderView.setImageDrawable(R.drawable.dedication_company);
-                    sliderView.setDescription("Dedication, time and attention to details");
-                    break;
-                case 5:
-                    sliderView.setImageDrawable(R.drawable.investment_company);
-                    sliderView.setDescription("Are Ferrari watches a good investment?");
+                    sliderView.setImageDrawable(R.drawable.fifth_company);
+                    sliderView.setDescription("The ‘soul’ of the supercars");
                     break;
             }
 
