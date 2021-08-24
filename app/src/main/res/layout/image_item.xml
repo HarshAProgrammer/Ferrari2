@@ -28,7 +28,7 @@
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:src="@drawable/widget_icon"
-            app:civ_border_color="@color/colorRed"
+            app:civ_border_color="@color/colorLightRed"
             app:civ_border_width="2dp" />
 
         <TextView

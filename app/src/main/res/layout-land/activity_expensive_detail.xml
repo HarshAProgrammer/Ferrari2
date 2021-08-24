@@ -161,7 +161,7 @@
             android:src="@drawable/ic_heart_white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:tint="@color/colorRed" />
+            app:tint="@color/colorLightRed" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

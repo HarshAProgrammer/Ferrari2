@@ -125,7 +125,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView categoriesRecyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
 
             new RecyclerViewSwipeDecorator.Builder(HomeActivity.this, c, categoriesRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
-                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorRed))
+                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorLightRed))
                     .addSwipeLeftActionIcon(R.drawable.ic_deleted_swipe_main)
                     .addSwipeRightBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorGreen))
                     .addSwipeRightActionIcon(R.drawable.ic_favourite_swipe_main)
@@ -601,7 +601,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
                 GeneralShareMainIntent.setType("Text/plain");
-                String generalMainShareBody = "ferrariA Crown For Every Achievement      " +
+                String generalMainShareBody = "Ferrari:We are the Competition" +
                         "" +
                         appLink;
                 String generalMainShareSub = "Ferrari App";
@@ -702,7 +702,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     shareOnTwitterIntent.setType("text/plain");
                     final String appPackageName = getApplicationContext().getPackageName();
                     ShareOnTwitterString = "https://play.google.com/store/apps/details?id=" + appPackageName;
-                    shareOnTwitterIntent.putExtra(Intent.EXTRA_TEXT, "ferrariA Crown For Every Achievement      " +
+                    shareOnTwitterIntent.putExtra(Intent.EXTRA_TEXT, "Ferrari:We are the Competition" +
                             "" + ShareOnTwitterString);
                     shareOnTwitterIntent.setPackage("com.twitter.android");
                     startActivity(shareOnTwitterIntent);

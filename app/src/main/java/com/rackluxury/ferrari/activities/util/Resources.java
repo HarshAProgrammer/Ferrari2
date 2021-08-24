@@ -5,78 +5,79 @@ import com.rackluxury.ferrari.activities.models.MediaObject;
 public class Resources {
 
     public static final MediaObject[] MEDIA_OBJECTS = {
-            new MediaObject("Ferrari Day-Date 228235 Sundust Roman dial 40 mm Everose gold\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F1Ferrari%20Day-Date%20228235%20Sundust%20Roman%20dial%2040%20mm%20Everose%20gold.mp4?alt=media&token=9e8b1b67-8499-4a38-8fb9-ca0e6ec89a2a",
+            new MediaObject("Ferrari Enzo Starts Engine and Load Up - (Remaster)\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F1.mp4?alt=media&token=d18318aa-fb47-47b9-b037-7b1dd9fc810b",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F1.jpg?alt=media&token=699cca6b-d0bf-4032-a6f1-3f61d384bc16",
+                    "This is a showcase video of Cars from Ferrari"),
+            new MediaObject("The First Supercar My Sony A7Siii Sees - Ferrari 458 Italia\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F2.mp4?alt=media&token=4e31975f-ab3f-4ab9-9f3b-e74ea1d2f62e",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F2.jpg?alt=media&token=93e8e540-4f86-4093-bdf8-c21e0ff1c63b",
+                    "This is a showcase video of Cars from Ferrari"),
+            new MediaObject("Ferrari F430 under the Christmas Lights\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F3.mp4?alt=media&token=cc11ba45-48bb-4739-8041-9d941f98c801",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F3.jpg?alt=media&token=81365a47-af8e-468b-ab47-0984ca1eb5f7",
+                    "This is a showcase video of Cars from Ferrari"),
 
+            new MediaObject("The Green Jewel - Ferrari 812 Superfast\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F4.mp4?alt=media&token=cf07fe98-ee69-441c-b374-ce330e191d9f",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F4.jpg?alt=media&token=5f9a7a87-2597-4306-a673-430ce29cd181",
+                    "This is a showcase video of Cars from Ferrari"),
 
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F1day_date.jpg?alt=media&token=788672a8-376a-41e2-bfcb-e67ae2e1ed14",
-                    "The amazing Ferrari Day-Date 228235 Sundust dial with Roman numerals fluted bezel president bracelet 18 ct Everose gold made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari Cars"),
+            new MediaObject("Wingless Misha Designs Widebody Ferrari 458 Italia\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F5.mp4?alt=media&token=ccd26bd5-06c8-4793-aeb6-67a409de1302",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F5.jpg?alt=media&token=30175c48-a32d-4422-ad25-7bb9a6945655",
+                    "This is a showcase video of Cars from Ferrari"),
 
-            new MediaObject("Ferrari Datejust 126300 Blue dial 41 mm Oyster bracelet Stainless Steel\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F2Ferrari%20Datejust%20126300%20Blue%20dial%2041%20mm%20Oyster%20bracelet%20Stainless%20Steel.mp4?alt=media&token=cce8fb29-0d8d-4542-afec-7d3e3df97808",
+            new MediaObject("It Has The Carbon Fiber Wheels Option! - Ferrari 488 Pista Spider\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F6.mp4?alt=media&token=1b070555-0912-4779-bcde-466df0df65ac",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F6.jpg?alt=media&token=a37446a3-a34a-4906-9189-87e1ff099327",
+                    "This is a showcase video of Cars from Ferrari"),
 
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F2datejust.jpg?alt=media&token=60d871cd-1f3b-4c56-9bd8-824ebf3b701a",
-                    "The amazing Ferrari Datejust 126300 Blue dial 41 mm Smooth bezel Oyster bracelet 904L stainless steel made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari Cars"),
+            new MediaObject("Aftermarket Wheels on a Ferrari 458 Spider\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F7.mp4?alt=media&token=b4bb05fd-fb90-4bb4-9fc9-aba8153ab195",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F7.jpg?alt=media&token=8dd9b8bd-9f73-4633-b7be-1c4c98b92651",
+                    "This is a showcase video of Cars from Ferrari"),
 
-            new MediaObject("Ferrari GMT-Master II 116718LN Green dial 40 mm Yellow Gold\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F3Ferrari%20GMT-Master%20II%20116718LN%20Green%20dial%2040%20mm%20Yellow%20Gold.mp4?alt=media&token=886c7a53-e4d6-4ddc-8bb0-672c90cc2e3c",
+            new MediaObject("A Very Fast Condo For Four - Ferrari GTC4 Lusso\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F9.mp4?alt=media&token=7864bbcb-40a5-4cb9-98f7-1a95ac1830ae",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F9.jpg?alt=media&token=56ce6e9d-7893-4b80-8315-90297d69f5bc",
+                    "This is a showcase video of Cars from Ferrari"),
 
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F3gmt_master_2.jpg?alt=media&token=ce9b8aec-177d-486a-b932-0877acc62ea4",
-                    "The amazing Ferrari GMT-Master II 116718LN Green dial 40 mm ceramic bezel oyster bracelet 18 ct yellow gold made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari Cars"),
+            new MediaObject("Love The Wheels - Ferrari F12 Berlinetta\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F10.mp4?alt=media&token=21487e8a-a799-4d7e-9b4f-8c2c767f3eee",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F10.jpg?alt=media&token=a4315805-6516-44be-9698-9fc4e402e30b",
+                    "This is a showcase video of Cars from Ferrari"),
 
-            new MediaObject("The beauty of Ferrari Submariner no date 114060 black dial 40 mm 904L stainless steel luxury watch\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F4The%20beauty%20of%20Ferrari%20Submariner%20no%20date%20114060%20black%20dial%2040%20mm%20904L%20stainless%20steel.mp4?alt=media&token=0b5816b8-7200-4456-a952-1c57f82e8b23",
+            new MediaObject("Black and Gold Wheels on a F12 Berlinetta\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F11.mp4?alt=media&token=1002da19-82c9-42db-9330-7a6a25d818a9",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F11.jpg?alt=media&token=2bb44d2f-d63d-4670-9af4-1171537511f2",
+                    "This is a showcase video of Cars from Ferrari"),
 
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F4submariner.jpg?alt=media&token=2e04e28e-4c00-46c7-acd7-ab65d81af68b",
-                    "Hello friends, let's take a closer look at this amazing Ferrari watch. I made this video for people who love Ferrari watches.  This video shows the beauty of Ferrari Submariner no date 114060 black dial luxury men's watch. This is a picture slide show video with beautiful background music. This is for all Ferrari fans...  \n"),
+            new MediaObject("Automotive Spotlight - Porky’s Ferrari 458 New Wrap\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F12.mp4?alt=media&token=bd852d4d-6e1e-4da6-b4a4-492d998f0bc1",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F12.jpg?alt=media&token=6c7b96a2-6ae1-4247-a2bf-6a9259be9844",
+                    "This is a showcase video of Cars from Ferrari"),
 
-            new MediaObject("Ferrari Cosmograph Daytona 116528 Champagne and Black dial 40 mm yellow gold\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F5Ferrari%20Cosmograph%20Daytona%20116528%20Champagne%20and%20Black%20dial%2040%20mm%20yellow%20gold.mp4?alt=media&token=d3d58515-de0c-47a6-b300-6f1527b5fcfb",
+            new MediaObject("Aventador and Porky’s 458 Arrival\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F13.mp4?alt=media&token=b84d9207-5dc8-4d46-b906-f9fd439b0baf",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F13.jpg?alt=media&token=0f522945-2224-4e39-941a-0e88330edca3",
+                    "This is a showcase video of Cars from Ferrari"),
 
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F5cosmograph_daytona.jpg?alt=media&token=84f93f9a-4bcc-475e-a94c-b8cb0371570e",
-                    "The amazing Ferrari Cosmograph Daytona 116528 Champagne and Black dial 40 mm Fixed bezel with engraved tachymetric scale Oyster bracelet 18 ct yellow gold made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari Cars"),
+            new MediaObject("Ferrari F430 Spider Walkaround\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F14.mp4?alt=media&token=27538aef-4f7d-42cc-b3d3-80be841bc81f",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F14.jpg?alt=media&token=3ca1d075-d3db-42e2-95d0-fccdd04109f9",
+                    "This is a showcase video of Cars from Ferrari"),
 
-            new MediaObject("Ferrari Yacht-Master II 116689 white dial 44 mm white gold and platinum\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F6Ferrari%20Yacht-Master%20II%20116689%20white%20dial%2044%20mm%20white%20gold%20and%20platinum.mp4?alt=media&token=1966848a-bd1d-45e9-add3-0ee59d11b8e6",
+            new MediaObject("Miniature Ferrari Museum Tour | Featuring LunarTheBun | Shell V-Power \n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F15.mp4?alt=media&token=b9b50469-6aef-4007-9410-fdcea81f97a7",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F15.jpg?alt=media&token=0958008e-017f-411d-b4dc-2358795eca48",
+                    "This is a showcase video of Cars from Ferrari"),
 
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F6yacht_master.jpg?alt=media&token=2f466e4b-063d-40ec-9c61-44e37c9cb320",
-                    "The amazing Ferrari Yacht-Master II 116689 white dial 44 mm platinum bezel oyster bracelet 18 ct white gold and platinum made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari Cars"),
+            new MediaObject("SMOL BOI Factory Green Ferrari F12\n",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2F16.mp4?alt=media&token=0e9363f6-bda8-4774-8d6e-aff20416e7ca",
+                    "https://firebasestorage.googleapis.com/v0/b/ferrari-71869.appspot.com/o/Videos%2FThumbnails%2F16.jpg?alt=media&token=bc79a905-5a39-4c94-95e5-e1bd46985f12",
+                    "This is a showcase video of Cars from Ferrari"),
 
-            new MediaObject("Ferrari Sea-Dweller Deepsea 116660 D-blue James Cameron 44 mm Stainless Steel\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F7Ferrari%20Sea-Dweller%20Deepsea%20116660%20D-blue%20James%20Cameron%2044%20mm%20Stainless%20Steel.mp4?alt=media&token=1c70b8f9-0d7b-4301-9b30-51b48bc59a43",
-
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F7sea_dweller.jpg?alt=media&token=8f39e80a-3316-4f70-94d0-7181c3e107af",
-                    "The amazing Ferrari Sea Dweller Deepsea 116660 D blue dial James Cameron Edition 44 mm ceramic bezel oyster bracelet 904L stainless steel made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari cars\n"),
-
-            new MediaObject("Ferrari Explorer II 216570 White dial 42 mm Stainless Steel\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F8Ferrari%20Explorer%20II%20216570%20Black%20dial%2042%20mm%20Stainless%20Steel.mp4?alt=media&token=142cae65-3dfc-47f9-a2ed-85bff30b2c9d",
-
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F8explorer_2.jpg?alt=media&token=77582370-47b2-4c0d-95f4-8249cba32947",
-                    "The amazing Ferrari Explorer II 216570 White dial 42 mm Fixed 24-hour graduated bezel oyster bracelet 904L stainless steel made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari cars\n"),
-
-            new MediaObject("Ferrari Sky-Dweller 326934 Black dial 42 mm steel and white gold\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F9Ferrari%20Sky-Dweller%20326935%20Sundust%20Roman%20dial%2042%20mm%20Everose%20gold.mp4?alt=media&token=227ccaaf-8817-4fd5-a71b-0dd4f75b4cbc",
-
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F9sky_dweller.jpg?alt=media&token=b2edfa2b-a9c2-43fe-9921-f4170010c895",
-                    "The amazing Ferrari Sky-Dweller 326934 Black dial 42 mm 18 ct white gold fluted bezel oyster bracelet White Rolesor - combination of 904L steel and 18 ct white gold made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari cars\n"),
-
-            new MediaObject("Ferrari Milgauss 116400GV Z-Blue Dial 40 mm stainless steel\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F10Ferrari%20Milgauss%20116400GV%20Z-Blue%20Dial%2040%20mm%20stainless%20steel.mp4?alt=media&token=681aae08-a084-4481-a6ad-ddf4a0000f59",
-
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F10milgauss.jpg?alt=media&token=8d44f00f-4600-4262-8aea-32102fd8e843",
-                    "The amazing Ferrari Milgauss 116400GV Z-Blue Dial 40 mm green sapphire smooth bezel oyster bracelet 904L stainless steel made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari cars\n"),
-
-            new MediaObject("Ferrari PearlMaster 116688 white dial 44mm customized with diamonds yellow gold swiss luxury watch\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F11Ferrari%20Pearlmaster%20116688%20white%20dial%2044mm%20customized%20with%20diamonds%20yellow%20gold%20swiss%20luxury%20watch.mp4?alt=media&token=44246156-ba97-4565-97b4-0573c799c617",
-
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F11pearlmaster.jpg?alt=media&token=5ccaf9e0-b6fe-46fa-b756-03edb057fbbb",
-                    "See the beauty of Ferrari PearlMaster 116688 white dial 44 mm customized with full of diamonds oyster bracelet 18 ct yellow gold made luxury watch\n"),
-
-            new MediaObject("Ferrari Air-King 116900 Black dial 40 mm stainless steel\n",
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2F12Ferrari%20Air-King%20116900%20Black%20dial%2040%20mm%20stainless%20steel.mp4?alt=media&token=024f7ee5-8221-4926-abff-2ed053ce7afc",
-
-                    "https://firebasestorage.googleapis.com/v0/b/ferrari-sa.appspot.com/o/Videos%2FThumbnails%2F12air_king.jpg?alt=media&token=a0896b90-3cbd-4ead-9ffc-9001ecc23311",
-                    "A closer look at the Ferrari Air-King 116900 Black dial 40 mm smooth bezel oyster bracelet 904L stainless steel made luxury watch. This video is dedicated to all Ferrari fans and the people who love Ferrari cars\n"),
 
     };
 }

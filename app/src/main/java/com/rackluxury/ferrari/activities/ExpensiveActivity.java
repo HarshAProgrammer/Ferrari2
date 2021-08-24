@@ -270,7 +270,7 @@ public class ExpensiveActivity extends AppCompatActivity {
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView expensiveRecyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
 
             new RecyclerViewSwipeDecorator.Builder(ExpensiveActivity.this, c, expensiveRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
-                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(ExpensiveActivity.this, R.color.colorRed))
+                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(ExpensiveActivity.this, R.color.colorLightRed))
                     .addSwipeLeftActionIcon(R.drawable.ic_deleted_swipe_main)
                     .addSwipeRightBackgroundColor(ContextCompat.getColor(ExpensiveActivity.this, R.color.colorGreen))
                     .addSwipeRightActionIcon(R.drawable.ic_favourite_swipe_main)

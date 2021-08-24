@@ -150,7 +150,7 @@
         android:src="@drawable/ic_heart_white"
         app:layout_constraintBottom_toTopOf="@id/contLayImageDetail"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/colorRed" />
+        app:tint="@color/colorLightRed" />
     <ImageView
         android:id="@+id/ivImagesDetailGreyHeart"
         android:layout_width="120dp"

@@ -155,7 +155,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:tint="@color/colorRed" />
+        app:tint="@color/colorLightRed" />
 
 
     <LinearLayout

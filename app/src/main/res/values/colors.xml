@@ -6,8 +6,8 @@
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlue">#0D66BD</color>
-    <color name="colorRed">#F32003</color>
-    <color name="colorGreen">#12784A</color>
+    <color name="colorLightRed">#F32003</color>
+    <color name="colorGreen">#A40203</color>
     <color name="colorGrey">#999999</color>
     <color name="colorPurple">#5025D1</color>
     <color name="colorYellow">#FEC537</color>
