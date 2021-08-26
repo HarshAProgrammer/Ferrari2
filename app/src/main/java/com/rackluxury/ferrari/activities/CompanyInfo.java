@@ -34,7 +34,6 @@ public class CompanyInfo extends AppCompatActivity {
         final FoldingCell fc3 = findViewById(R.id.folding_cell3);
         final FoldingCell fc4 = findViewById(R.id.folding_cell4);
         final FoldingCell fc5 = findViewById(R.id.folding_cell5);
-        final FoldingCell fc6 = findViewById(R.id.folding_cell6);
 
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null){
@@ -92,16 +91,11 @@ public class CompanyInfo extends AppCompatActivity {
                 fc5.toggle(false);
             }
         });
-        fc6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fc6.toggle(false);
-            }
-        });
+
     }
 
     private void setSliderViews() {
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 4; i++) {
 
             DefaultSliderView sliderView = new DefaultSliderView(CompanyInfo.this);
 

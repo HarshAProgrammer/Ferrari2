@@ -808,6 +808,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "A grand tourer with a whopping 789 hp, wrapped in a curvaceous Italian body, paired to one of the greatest chassis we have ever experienced. With its front-mid-mounted naturally aspirated 6.5L V12 engine and rear-wheel-drive layout, it is the latest iteration of Ferrari’s super-GT car.\n" +
                 "It features a 7-speed dual-clutch gearbox, advanced active aerodynamics, and four-wheel steering. The Ferrari 812 Superfast is the successor to the Ferrari F12 and is now the company’s fastest front-engined-V12-powered grand tourer.\n" +
                 "Despite the powerplant sitting in front of the driver, the 812 Superfast remains an engaging and soul-satisfying Ferrari experience, every single time you get into it. The perfect car. The perfect Ferrari.\n\n", "340000", R.drawable.first_categories, "0", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari SF90 Stradale", "•\tBase price: US$507,000\n" +
                 "•\tEngine: 4.0L twin-turbocharged V8, plus 3 electric motors\n" +
                 "•\tPower: 989 hp (combined)\n" +
@@ -819,6 +820,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "Two of those electric motors are mounted on the front axle and one is mounted between the engine and the gearbox. The combined maximum output of the V8, together with the electric motors, makes this Ferrari good for 0-60 mph in just 2.5 seconds. This powertrain is the most powerful of any Ferrari and easily places the SF90 Stradale atop the Ferrari lineup.\n" +
                 "The car also features an all-new chassis made of carbon fiber and aluminum. The sleek body panels and its aerodynamic shape help the model produce a whopping 860 pounds of downforce at speed; the whole profile of the car is extremely low, allowing it to slice through the air at high speeds.\n" +
                 "It has a two-piece rear wing which is derived from the company’s participation in Formula 1 racing.\n\n", "570000", R.drawable.second_categories, "1", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari SF90 Spider", "•\tBase price: US$557,000\n" +
                 "•\tEngine: 4.0L twin-turbocharged V8, plus 3 electric motors\n" +
                 "•\tPower: 989 hp (combined)\n" +
@@ -829,6 +831,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "The Ferrari SF90 Spider has now been unveiled as Ferrari’s first plug-in hybrid roadster with close to 1,000 hp. The car is the open-top version of the SF90 Stradale. It maintains many of Stradale’s specs, including a 211 mph top speed. It will do a 0-60 mph time in just 2.5 seconds.\n" +
                 "The SF90 Spider features a retractable hardtop that’s made of aluminum. This saves around 88 pounds over other traditional materials, according to Autoblog. However, the Spider still weighs 220 pounds more than the Stradale. The Spider’s roof can be lowered in 14 seconds and operated when the car is standing still or at low speeds.\n" +
                 "There’s also a powered rear window that can be raised even when the top is down. This provides a bit more wind protection. Ferrari didn’t stop there in terms of airflow around the cockpit. The central trim piece between the seats also manages to channel air away from the occupants.\n\n", "557000", R.drawable.third_categories, "2", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari Portofino M", "•\tBase price: US$245,000\n" +
                 "•\tEngine: 3.9L twin-turbocharged V8\n" +
                 "•\tPower: 612 hp @ 7,500 rpm\n" +
@@ -839,6 +842,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "The Ferrari Portofino has been, for a couple of years, the Italian marque’s 2+2 grand touring cabriolet. It was, and still is, a powerhouse of comfort and technology, easily able to cross continents as much as drive a few blocks to the grocery store.\n" +
                 "Now, however, it is getting its first refresh, thanks in large part to the success of the Ferrari Roma, which itself was a hardtop coupe evolution of the Portofino. Named the Portofino Modificata, it is shortened to Portofino M for branding purposes.\n" +
                 "The highlight of this update has to be the newly developed eight-speed, dual-clutch automatic transmission. The everyday drop-top has also been refined on some other aspects which now makes it an even easier car to live with. A boatload of safety tech has been added and now the engine makes 20 hp more.\n\n", "245000", R.drawable.fourth_categories, "3", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari F8 Tributo", "•\tBase price: US$276,000\n" +
                 "•\tEngine: 3.9L twin-turbocharged V8\n" +
                 "•\tPower: 710 hp @ 8,000 rpm\n" +
@@ -849,6 +853,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "Billed as the replacement for the 488 GTB, the F8 Tributo inherits much of the outgoing model’s DNA. Mind you, this is large – if not entirely – a positive thing, as the F8 Tributo notably improves in areas where there was room to while keeping in the essence of what was working so well before.\n" +
                 "The 2021 Ferrari F8 Tributo is the latest and greatest V8-powered Berlinetta to be produced by the prancing horse marque. Considered the ‘entry-level’ mid-engined car in the Ferrari model lineup, the F8 Tributo is nevertheless the greater of the sum of its parts; it is a highly capable all-rounder, standing out amongst an expanding club of ‘everyday supercars’.\n" +
                 "Producing 710 hp at a screaming 8,000 rpm and 568 lb-ft of torque at an accessible 3,250 rpm, the F8 Tributo’s 3.9L twin-turbocharged V8 is nothing to balk at, despite being standard for the times.\n\n", "276000", R.drawable.fifth_categories, "4", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari F8 Spider", "•\tBase price: US$274,000\n" +
                 "•\tEngine: 3.9L twin-turbocharged V8\n" +
                 "•\tPower: 710 hp @ 8,000 rpm\n" +
@@ -859,6 +864,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "The F8 Spider replaces the 488 Spider and is officially on sale in Ferrari dealerships. It is powered by a twin-turbocharged 3.9-liter V-8 that produces 710 horsepower and 568 lb-ft of torque. It is rear-wheel drive, and a seven-speed automatic transmission changes the gears. Peak torque comes earlier in the rev range than the 488. The aero kit, headlights, taillights, and body look different than the 488 GTB.\n" +
                 "We drove both the F8 Spider and Tributo back to back and our pick is the Spider. It is just as fast and dynamic as the coupe, but it feels faster, louder, and more involving thanks to its open top. It feels more visceral.\n" +
                 "Like the F8 Tributo, the 2021 Spider accelerates from 0-60 mph in just 2.8 seconds, on its way to 124 mph in just 7.8 seconds, and a top speed of 211 mph. Fast enough I think.\n\n", "274000", R.drawable.sixth_categories, "5", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari Roma", "•\tBase price: US$222,630\n" +
                 "•\tEngine: 3.9L twin-turbocharged V8\n" +
                 "•\tPower: 612 hp @ 7,500 rom\n" +
@@ -869,6 +875,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "The vehicle is a stunning thing to look at, with a minimalist (by today’s standards) grille and a shark-nose front end. It’s long, lean, and so utterly Ferrari that it makes all the right places on a true car enthusiast ache with want.\n" +
                 "Inside the car, you can see that it’s one of the most high-tech cabins of any Ferrari. There’s a large digital instrument cluster, a unique vertically oriented infotainment screen in the center with some controls in front of it and the passenger has their own small horizontally oriented infotainment screen.\n" +
                 "Now onto even better stuff; the rear-wheel-drive Roma gets a 3.9L twin-turbocharged V8 engine with new cam profiles and a speed sensor that allows the maximum rpm to rise by 5,000 rpm. In other words, this is an Italian Stallion that can truly sing. The engine has a single-piece exhaust manifold that’s designed to make the most of the engine’s efforts. All told, it makes 612 hp and 560 lb-ft of torque.\n\n", "222000", R.drawable.seventh_categories, "6", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari 812 GTS", "•\tBase price: US$363,730\n" +
                 "•\tEngine: 6.5L naturally aspirated V8\n" +
                 "•\tPower: 789 hp @ 8,900 rpm\n" +
@@ -881,6 +888,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "What makes the 812 GTS so unique is the fact that it's powered by a 6.5-liter V12 that produces nearly 800 horsepower, and will do over 210 mph with the top down. The 812 GTS takes on more of a GT attitude rather than an all-out supercar attack and is surprisingly docile when it needs to be.\n" +
                 "It is also the first series-production front-engined V12 Ferrari Spider in over 50 years. That is a huge deal. It is also a proper hard-top when it needs to be, letting you have your cake and eat it too. Add usable trunk space and that V12 noise, and this may be the best GT on the market.\n" +
                 "Car and Driver said it best when they said: \"The Ferrari 812 GTS embodies the grand-tourer archetype with its comfortable driver-focused cabins, melodious V-12s, and incredible performance\"\n\n", "363000", R.drawable.eighth_categories, "7", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari Monza SP1", "•\tBase price: >US$1,000,000\n" +
                 "•\tEngine: 6.5 liter naturally aspirated V12\n" +
                 "•\tPower: 810 bhp @ 8,500 rpm\n" +
@@ -889,6 +897,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "•\t0-100 mph: < 8 sec (est)\n" +
                 "•\tTop Speed: 186 mph\n" +
                 "Think of classic Ferraris of the 1950s coupled with the most advanced sports car technology available today and you pretty much nailed it. The first iteration of the program is the Ferrari Monza SP1 and SP2. Both the Monza SP1 and SP2 are based on the Ferrari 812 Superfast and come with a 6.5-liter V12 engine with 810 hp to the rear wheels.\n\n", "1000000", R.drawable.ninth_categories, "8", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari Monza SP2", "•\tBase price: >US$1,000,000\n" +
                 "•\tEngine: 6.5 liter naturally aspirated V12\n" +
                 "•\tPower: 810 bhp @ 8,500 rpm\n" +
@@ -897,6 +906,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "•\t0-100 mph: < 8 sec (est)\n" +
                 "•\tTop Speed: 186 mph\n" +
                 "Think of classic Ferraris of the 1950s coupled with the most advanced sports car technology available today and you pretty much nailed it. The first iteration of the program is the Ferrari Monza SP1 and SP2. Both the Monza SP1 and SP2 are based on the Ferrari 812 Superfast and come with a 6.5-liter V12 engine with 810 hp to the rear wheels.\n\n", "1000000", R.drawable.tenth_categories, "9", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari 488 Pista", "•\tBase price: US$350,000\n" +
                 "•\tEngine: 3.9 liter twin turbo V8\n" +
                 "•\tPower: 710 bhp @ 7,500 rpm\n" +
@@ -905,6 +915,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 "•\t0-100 mph: 5.4 sec\n" +
                 "•\tTop Speed: 211 mph\n" +
                 "The 488 Pista is the marque’s latest Special Series model and – following in the footsteps of its predecessors – epitomizes the pinnacle of Ferrari road cars. Ferrari’s naturally aspirated V8s shrieked and snarled into the redline. The Pista barks and roars its way there. A different special series animal for sure, but an animal nonetheless. Almost perfect.\n\n", "350000", R.drawable.eleventh_categories, "10", "0");
+        myCategoriesList.add(mCategoriesData);
         mCategoriesData = new CategoriesData("2021 Ferrari 488 Pista Spider", "•\tBase price: US$350,000\n" +
                 "•\tEngine: 3.9-liter twin turbo V8\n" +
                 "•\tPower: 710 bhp @ 7,500 rpm\n" +

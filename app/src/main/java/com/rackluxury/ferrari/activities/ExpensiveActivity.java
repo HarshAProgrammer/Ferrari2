@@ -191,45 +191,37 @@ public class ExpensiveActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(ExpensiveActivity.this, 1);
         expensiveRecyclerView.setLayoutManager(gridLayoutManager);
         myExpensiveList = new ArrayList<>();
-        mExpensiveData = new ExpensiveData("Ferrari Cosmograph Daytona-Paul Newman", "The dream of any watch collector would be to own this exact Ferrari Paul Newman Daytona produced in 1968. It is the first Ferrari Daytona watch fitted with an “exotic dial.” It also has a tachymeter bezel and features a personal engraving by Newman’s wife that reads, “Drive Carefully, Me” on its stainless-steel case-back."
-                , "17752500", R.drawable.newman_expensive,"0","0");
+        mExpensiveData = new ExpensiveData("", ""
+                ,"4733000", R.drawable.first_expensive,"0","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Cosmograph Daytona-The Unicorn", "This exquisite chronograph is the only Daytona of its kind (hence its nickname). It is entirely crafted in white gold and sports a black dial and a bark-finished bracelet. It was owned by John Goldberger, one of the most prominent collectors in the world, who sold it to raise funds for charity, explains Boutros."
-                , "6132618", R.drawable.unicorn_expensive,"1","0");
+        mExpensiveData = new ExpensiveData("", ""
+                ,"4170000", R.drawable.second_expensive,"1","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Cellini-Bao Dai triple calendar moonphase ", "This superbly-preserved, 18-karat yellow-gold automatic Ferrari was previously owned by Vietnamese emperor Bao Dai. It has a triple calendar with moon phase dial that is also set with diamonds at 12, 3, 5, 8, and 10 o’clock. Ferrari only produced that triple calendar and moon phase watch for a couple of years starting in 1950 before it re-introduced them again in 2016."
-                , "5232479", R.drawable.bao_dai_expensive,"2","0");
+        mExpensiveData = new ExpensiveData("2003 Enzo", "The Enzo was designed by Ken Okuyama, Pininfarina’s head of design. Before production began, the limited run of 399 units was sold to customers who previously had bought the F40 and F50 models. With an initial price of US$659,330, one of the cars was later sold at a Sotheby’s auction for US$1.1 million. And now, in 2021, this iconic car is the third most expensive Ferrari in our stock."
+                ,"2407000", R.drawable.third_expensive,"2","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Cosmograph Daytona-The Legend", "This 18-karat yellow gold Oyster Cosmograph \"Paul Newman,\" aka The Legend, is one of only three known similar watches on the market. Its most fascinating feature is the dial—a “creamy lemon shade,” as Phillips put it in its catalogue—in sharp contrast with the ivory dials that were fitted to stainless steel Paul Newmans at the time."
-                , "3844312", R.drawable.legend_expensive,"3","0");
+        mExpensiveData = new ExpensiveData("1984 Ferrari 288 GTO", "With GT for Grand Turismo and O for Omologato, the 280 GTO is an exotic homologation of Ferrari sports cars. This model, equipped with a GTO Evoluzione kit, was considered high-tech and avant-garde for its times. Its modifications included the use of Kevlar and carbon fiber as well as engine, chassis, and safety system upgrades."
+                ,"2265000", R.drawable.fourth_expensive,"3","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Cosmograph Daytona-The Neanderthal", "Produced for a few years only around 1965, this is the first “Cosmograph” wristwatch equipped with screw-down chronograph pushers for improved water resistance. Its unique black and white dial features oversized registers and black outer seconds marks set against a white track."
-                , "3111497", R.drawable.neanderthal_expensive,"4","0");
+        mExpensiveData = new ExpensiveData("1991 Ferrari F40", "The closer we get to the US$2-million line, the less diversity we see. Only iconic classic models, sports car legends, and supercars rise to this level. Both the first and the second descriptors are true of the F40: the successor to the 288 GTO (mentioned below) and the final Ferrari automobile personally approved by Enzo Ferrari. This mid-engine, the rear-wheel-drive sports car was designed to celebrate Ferrari’s 40th anniversary."
+                ,"1873000", R.drawable.fifth_expensive,"4","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Cellini-Antimagnetique", "The 1942 Antimagnetique Reference 4113 is the oldest Ferrari on our list after selling for nearly $2.5 million during a Phillips’ auction in Geneva in 2016. It comes in an extraordinarily large case considering its production year, at 44 mm. It is in fact, the largest case ever built by Ferrari. Only 12 examples of the Reference 4113 are known to still exist today. The watch was initially produced as a gift to celebrate the victory of a racing team."
-                , "2500000", R.drawable.antimagnetique_expensive,"5","0");
+        mExpensiveData = new ExpensiveData("2011 Ferrari 599 Pininfarina", "With only 80 examples, this limited-edition model was created to commemorate the 80th anniversary of Pininfarina. The 599 Pininfarina officially is a member of the most limited Ferrari series, and one of the finest sports cars Ferrari has ever built. Its powerful, 6.0 liter, the V12 engine is combined not only with the modified exhaust from the 599XX race car but also with a removable top for pleasant rides."
+                ,"1600000", R.drawable.sixth_expensive,"5","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari GMT-Master-Marlon Brando’s Apocalypse Now", "This Ferrari GMT ref. 1675 worn by Marlon Brando in the movie Apocalypse Now was sold for $1.952 million at a Phillips auction in December 2019. The auction, appropriately named the Phillips Game Changers event, saw the Ferrari GMT-Master manufactured in 1972 sell well above the expected price."
-                , "1952000", R.drawable.marlon_expensive,"6","0");
+        mExpensiveData = new ExpensiveData("2017 Ferrari F12", "The F12tdf pays homage to the Tour de France which was regularly won by Ferrari in the 1950s and 1960s. The model boasts excellent performance and sharp looks, being the last Ferrari model designed by Pininfarina. On top of that, the version put up for sale via JamesEdition is finished in the historical colorway Grigio Ferro with a unique two-tone racing stripe (Nero center; Rosso Scuderia sides)."
+                ,"1350000", R.drawable.seventh_expensive,"6","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Cosmograph Daytona-Eric Clapton’s Oyster Albino ", "Eric Clapton’s Daytona, dubbed the Ferrari “Oyster Albino” Cosmograph, sold not once but twice for substantial amounts during public auctions. The first time was in 2003 in New York where the watch was bought for $505,000 during an auction organized by Sotheby’s. Twelve years later, in May 2015, Eric Clapton’s Daytona was sold once more but this time for $1.4 million at a Phillips auction in Geneva, nearly three times its previous price."
-                , "1400000", R.drawable.clapton_expensive,"7","0");
+        mExpensiveData = new ExpensiveData(" 1957 Ferrari 250 GT Coupe Boano", "Four classic Ferrari cars are on our list, and one of them is a beautiful 250 GT: Ferrari’s first, true production model. The Coupe Boano version was manufactured by Pininfarina’s partner, Carrozzeria Boano coachbuilding company. Although the car is not so widely known as the 250 GTO, its price both on car auctions and on the open market has risen above US$1 million. With that said, 250 GT is one of the best Ferraris to buy for investment"
+                ,"1195000", R.drawable.eighth_expensive,"7","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Day-Date-Jack Nicklaus", "Ferrari gave this yellow gold Day-Date to legendary golfer Jack Nicklaus in 1967. He pretty much wore it every day since then. Jack Nicklaus, known as the Golden Bear, wore this Ferrari when he won 12 of his record 18 professional major championship titles. The watch was also often photographed when Nicklaus hoisted the championship trophy following his victories."
-                , "1220000", R.drawable.nicklaus_expensive,"8","0");
+        mExpensiveData = new ExpensiveData(" Ferrari 599 GTO", "The 599 GTO (for Gran Turismo Omologato) is a road-legal version of the 599XX track day car.  The 6-liter, V12 engine of the GTO produces 660 hp and comes from the legendary Ferrari Enzo. The power is transmitted via an F1 six-speed gearbox. This GTO scored the best time in the history of Ferrari on the racetrack in Fiorano."
+                ,"879000", R.drawable.ninth_expensive,"8","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari GMT Master II-Ice", "This Ferrari GMT-Master Ice is the watch that football superstar Cristiano Ronaldo wore during the 14th Dubai International Sports Conference. It is the most expensive new Ferrari you can buy. It retails for $485,350 but its price might vary depending on the market price for diamonds at the time of your purchase."
-                , "485350", R.drawable.ice_expensive,"9","0");
+        mExpensiveData = new ExpensiveData(" 2015 Ferrari 458 Speciale Aperta", "A rare 458 Speciale Aperta is up for sale in Japan. Among other features, the car boasts a light-beige interior with special stitching; 20” forged gold, diamond rims; and gold brake calipers. The model was unveiled at the 2014 Paris Motor Show and led the list of fastest, street-legal, convertible Ferraris until LaFerrari Aperta took over."
+                ,"786000", R.drawable.tenth_expensive,"9","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Submariner-James Bond’s 1972", "Yet another Submariner in our list of the most expensive Ferrari watches ever sold. This one is the actual watch worn by Sir Roger Moore while playing James Bond in Live and Let Die in 1973. The watch was sold for $365,000 at a Phillips auction in Geneva in 2015."
-                , "365000", R.drawable.james_bond_expensive,"10","0");
-        myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Pearlmaster-Platinum Diamond", "Unlike its modern sibling, the Ferrari Platinum Diamond Pearlmaster is based on the Day-Date collection instead of the Datejust. The limited-edition watch is made from meteorite diamond and counts 42 diamonds on its custom bezel. The 39mm dial watch was first released in 2011 for $277,850."
-                , "277850", R.drawable.platinum_expensive,"11","0");
-        myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("Ferrari Submariner-Steve McQueen’s 1967", "You could argue that Steve McQueen’s 1967 Ferrari Submariner started the modern craving for expensive Ferrari watches. The watch is the first in our list to be sold for a high price at an auction in 2009. Organized by Antiquorum, the auction closed at $234,000, which was the highest price ever paid for a expensive Ferrari at the time."
-                , "234000", R.drawable.steve_mcqueen_expensive,"12","0");
-        myExpensiveList.add(mExpensiveData);
+
         myExpensiveAdapter = new MyExpensiveAdapter(ExpensiveActivity.this, myExpensiveList);
         expensiveRecyclerView.setAdapter(myExpensiveAdapter);
     }
