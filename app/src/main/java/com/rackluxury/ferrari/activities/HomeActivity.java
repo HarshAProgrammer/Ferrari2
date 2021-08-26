@@ -125,9 +125,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView categoriesRecyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
 
             new RecyclerViewSwipeDecorator.Builder(HomeActivity.this, c, categoriesRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
-                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorLightRed))
+                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorDelete))
                     .addSwipeLeftActionIcon(R.drawable.ic_deleted_swipe_main)
-                    .addSwipeRightBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorGreen))
+                    .addSwipeRightBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorFavourite))
                     .addSwipeRightActionIcon(R.drawable.ic_favourite_swipe_main)
                     .setActionIconTint(ContextCompat.getColor(categoriesRecyclerView.getContext(), android.R.color.white))
                     .create()
@@ -401,7 +401,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.expensiveNavigation) {
-            ExpensiveWatches();
+            ExpensiveSportsCars();
 
         } else if (id == R.id.imagesNavigation) {
             Images();
@@ -488,7 +488,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         Animatoo.animateSwipeRight(HomeActivity.this);
     }
 
-    private void ExpensiveWatches() {
+    private void ExpensiveSportsCars() {
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -601,7 +601,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
                 GeneralShareMainIntent.setType("Text/plain");
-                String generalMainShareBody = "Ferrari:We are the Competition" +
+                String generalMainShareBody = "Ferrari:We are the Competition      " +
                         "" +
                         appLink;
                 String generalMainShareSub = "Ferrari App";
@@ -702,7 +702,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     shareOnTwitterIntent.setType("text/plain");
                     final String appPackageName = getApplicationContext().getPackageName();
                     ShareOnTwitterString = "https://play.google.com/store/apps/details?id=" + appPackageName;
-                    shareOnTwitterIntent.putExtra(Intent.EXTRA_TEXT, "Ferrari:We are the Competition" +
+                    shareOnTwitterIntent.putExtra(Intent.EXTRA_TEXT, "Ferrari:We are the Competition      " +
                             "" + ShareOnTwitterString);
                     shareOnTwitterIntent.setPackage("com.twitter.android");
                     startActivity(shareOnTwitterIntent);

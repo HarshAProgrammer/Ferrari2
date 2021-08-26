@@ -367,7 +367,7 @@ public class CategoriesDetailActivity extends AppCompatActivity {
             bitmap = drawable.getBitmap();
 
             try {
-                File file = new File(getApplicationContext().getExternalCacheDir(), File.separator + "Watches from Ferrari.png");
+                File file = new File(getApplicationContext().getExternalCacheDir(), File.separator + "Cars from Ferrari.png");
                 FileOutputStream fOut = new FileOutputStream(file);
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut);
                 fOut.flush();

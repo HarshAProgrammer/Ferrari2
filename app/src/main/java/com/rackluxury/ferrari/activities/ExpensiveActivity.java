@@ -264,7 +264,7 @@ public class ExpensiveActivity extends AppCompatActivity {
             new RecyclerViewSwipeDecorator.Builder(ExpensiveActivity.this, c, expensiveRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
                     .addSwipeLeftBackgroundColor(ContextCompat.getColor(ExpensiveActivity.this, R.color.colorLightRed))
                     .addSwipeLeftActionIcon(R.drawable.ic_deleted_swipe_main)
-                    .addSwipeRightBackgroundColor(ContextCompat.getColor(ExpensiveActivity.this, R.color.colorGreen))
+                    .addSwipeRightBackgroundColor(ContextCompat.getColor(ExpensiveActivity.this, R.color.colorFavourite))
                     .addSwipeRightActionIcon(R.drawable.ic_favourite_swipe_main)
                     .setActionIconTint(ContextCompat.getColor(expensiveRecyclerView.getContext(), android.R.color.white))
                     .create()

@@ -11,8 +11,13 @@
     <color name="colorGrey">#999999</color>
     <color name="colorPurple">#5025D1</color>
     <color name="colorYellow">#FEC537</color>
-
     <color name="fcmNotificationColor">#12784A</color>
+
+
+    <color name="colorFavourite">#12784A</color>
+
+    <color name="colorDelete">#A40203</color>
+
 
     <color name="gradient_start_color">#4c84ff</color>
     <color name="gradient_end_color">#18a3fe</color>
