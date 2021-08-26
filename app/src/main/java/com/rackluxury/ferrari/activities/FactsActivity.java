@@ -66,10 +66,16 @@ public class FactsActivity extends AppCompatActivity {
         viewPagerFacts.setPadding(130, 0, 130, 0);
 
         colors = new Integer[]{
-                getResources().getColor(R.color.colorWhite),
+                getResources().getColor(R.color.colorFacts1),
                 getResources().getColor(R.color.colorFacts2),
                 getResources().getColor(R.color.colorFacts3),
-                getResources().getColor(R.color.colorWhite)
+                getResources().getColor(R.color.colorFacts4),
+                getResources().getColor(R.color.colorFacts5),
+                getResources().getColor(R.color.colorFacts6),
+                getResources().getColor(R.color.colorFacts7),
+                getResources().getColor(R.color.colorFacts8),
+                getResources().getColor(R.color.colorFacts9),
+                getResources().getColor(R.color.colorFacts10)
         };
 
         viewPagerFacts.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
