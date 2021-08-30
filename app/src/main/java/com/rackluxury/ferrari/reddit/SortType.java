@@ -2,7 +2,7 @@ package com.rackluxury.ferrari.reddit;
 
 public class SortType {
 
-    private Type type;
+    private final Type type;
     private Time time;
 
     public SortType(Type type) {

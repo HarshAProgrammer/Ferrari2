@@ -77,7 +77,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     final List<CategoriesData> favouriteCategories = new ArrayList<>();
     final List<CategoriesData> deletedCategories = new ArrayList<>();
     RecyclerView categoriesRecyclerView;
-    List<CategoriesData> myCategoriesList;]
+    List<CategoriesData> myCategoriesList;
 
 
     CategoriesData mCategoriesData;
