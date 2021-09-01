@@ -63,7 +63,6 @@ public class ExpensiveDetailActivity extends AppCompatActivity {
     private FileOutputStream outputStream;
     private Bitmap bitmap;
     private BitmapDrawable drawable;
-    private MotionLayout expensiveDetailLay;
     private SharedPreferences prefs;
     private SoundPool soundPool;
     private int soundSaveImage;
@@ -71,7 +70,6 @@ public class ExpensiveDetailActivity extends AppCompatActivity {
     private int soundWallpaper;
     private AnimatedVectorDrawable avd2;
     private AnimatedVectorDrawableCompat avd;
-    private ImageView liker;
     private ImageView mainGreyHeart;
     private CardView cardViewLike;
     private ImageView mainRedHeart;
@@ -141,12 +139,12 @@ public class ExpensiveDetailActivity extends AppCompatActivity {
 
     private void setUpUIViewsDetailActivity() {
         toolbar = findViewById(R.id.toolbarExpensiveDetailActivity);
-        expensiveDetailLay = findViewById(R.id.motionLayExpensiveDetail);
+        MotionLayout expensiveDetailLay = findViewById(R.id.motionLayExpensiveDetail);
         expensiveName = findViewById(R.id.tvExpensiveDetailName);
         expensiveDescription = findViewById(R.id.tvExpensiveDetailDescription);
         expensiveImage = findViewById(R.id.ivExpensiveDetailImage);
 
-        liker = findViewById(R.id.ivExpensiveDetailLiker);
+        ImageView liker = findViewById(R.id.ivExpensiveDetailLiker);
         cardViewLike = findViewById(R.id.cvExpensiveLikerOptions);
         mainGreyHeart = findViewById(R.id.ivExpensiveDetailGreyHeart);
         mainRedHeart = findViewById(R.id.ivExpensiveDetailRedHeart);

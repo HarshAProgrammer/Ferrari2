@@ -72,7 +72,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/guideline2"
                     app:layout_constraintStart_toEndOf="@id/subreddit_name_text_view_theme_preview_posts_fragment"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
 
                 <TextView
                     android:id="@+id/post_time_text_view_best_theme_preview_posts_fragment"
@@ -193,19 +194,22 @@
                     android:id="@+id/archived_image_view_theme_preview_posts_fragment"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_archive_outline" />
+                    android:src="@drawable/ic_archive_outline"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/locked_image_view_theme_preview_posts_fragment"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_outline_lock_24dp" />
+                    android:src="@drawable/ic_outline_lock_24dp"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/crosspost_image_view_theme_preview_posts_fragment"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/crosspost" />
+                    android:src="@drawable/crosspost"
+                    android:contentDescription="TODO" />
 
             </com.nex3z.flowlayout.FlowLayout>
 
@@ -233,7 +237,8 @@
                 android:layout_height="150dp"
                 android:scaleType="center"
                 android:src="@drawable/ic_link"
-                app:tint="@android:color/tab_indicator_text" />
+                app:tint="@android:color/tab_indicator_text"
+                android:contentDescription="TODO" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -250,7 +255,8 @@
                     android:src="@drawable/ic_arrow_upward_grey_24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
 
                 <TextView
                     android:id="@+id/score_text_view_theme_preview_posts_fragment"
@@ -276,7 +282,8 @@
                     android:src="@drawable/ic_arrow_downward_grey_24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/score_text_view_theme_preview_posts_fragment"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
 
                 <TextView
                     android:id="@+id/comments_count_theme_preview_posts_fragment"
@@ -307,7 +314,8 @@
                     app:layout_constraintEnd_toStartOf="@id/share_button_theme_preview_posts_fragment"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintStart_toEndOf="@id/comments_count_theme_preview_posts_fragment"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/share_button_theme_preview_posts_fragment"
@@ -320,7 +328,8 @@
                     android:src="@drawable/ic_share_grey_24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

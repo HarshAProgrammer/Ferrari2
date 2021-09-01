@@ -45,7 +45,6 @@ import java.util.List;
 public class MyExpensiveAdapter extends RecyclerView.Adapter<MyExpensiveAdapter.ExpensiveViewHolder>{
     private final Context mContext;
     private int lastPosition = -1;
-    private FirebaseAuth firebaseAuth;
     private FavDBExpensive favDB;
     private List<ExpensiveData> mExpensiveData;
 
@@ -118,7 +117,7 @@ public class MyExpensiveAdapter extends RecyclerView.Adapter<MyExpensiveAdapter.
     }
     private void likeClick (ExpensiveData expensiveData, Button favBtn, final TextView textLike) {
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         DatabaseReference refLikeExpensive = FirebaseDatabase.getInstance().getReference().child(firebaseAuth.getUid()).child("likes").child("expensiveLikes");
         final DatabaseReference upvotesRefLikeExpensive = refLikeExpensive.child(expensiveData.getKey_id());
 

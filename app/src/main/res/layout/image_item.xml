@@ -67,21 +67,24 @@
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:src="@drawable/ic_action_like_border" />
+            android:src="@drawable/ic_action_like_border"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:src="@drawable/ic_action_comment_border" />
+            android:src="@drawable/ic_action_comment_border"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:src="@drawable/ic_action_send_border" />
+            android:src="@drawable/ic_action_send_border"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="0dp"
@@ -94,7 +97,8 @@
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="4dp"
-            android:src="@drawable/ic_action_bookmark_border" />
+            android:src="@drawable/ic_action_bookmark_border"
+            android:contentDescription="TODO" />
 
 
     </LinearLayout>

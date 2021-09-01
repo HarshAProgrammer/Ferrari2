@@ -131,13 +131,10 @@ public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerVi
     private final int mSingleCommentThreadBackgroundColor;
     private final int mVoteAndReplyUnavailableVoteButtonColor;
     private final int mButtonTextColor;
-    private final int mPostIconAndInfoColor;
     private final int mCommentIconAndInfoColor;
     private final int mFullyCollapsedCommentBackgroundColor;
     private final int mAwardedCommentBackgroundColor;
     private final Integer[] verticalBlockColors;
-
-    private final Drawable mCommentIcon;
 
     private int mSearchCommentIndex = -1;
 
@@ -290,7 +287,7 @@ public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerVi
         mSingleCommentThreadBackgroundColor = customThemeWrapper.getSingleCommentThreadBackgroundColor();
         mVoteAndReplyUnavailableVoteButtonColor = customThemeWrapper.getVoteAndReplyUnavailableButtonColor();
         mButtonTextColor = customThemeWrapper.getButtonTextColor();
-        mPostIconAndInfoColor = customThemeWrapper.getPostIconAndInfoColor();
+        int mPostIconAndInfoColor = customThemeWrapper.getPostIconAndInfoColor();
         mCommentIconAndInfoColor = customThemeWrapper.getCommentIconAndInfoColor();
         mFullyCollapsedCommentBackgroundColor = customThemeWrapper.getFullyCollapsedCommentBackgroundColor();
         mAwardedCommentBackgroundColor = customThemeWrapper.getAwardedCommentBackgroundColor();
@@ -305,7 +302,7 @@ public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerVi
                 customThemeWrapper.getCommentVerticalBarColor7(),
         };
 
-        mCommentIcon = activity.getDrawable(R.drawable.ic_comment_grey_24dp);
+        Drawable mCommentIcon = activity.getDrawable(R.drawable.ic_comment_grey_24dp);
         if (mCommentIcon != null) {
             DrawableCompat.setTint(mCommentIcon, mPostIconAndInfoColor);
         }

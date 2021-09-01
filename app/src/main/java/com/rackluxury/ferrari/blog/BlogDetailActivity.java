@@ -1,8 +1,6 @@
 package com.rackluxury.ferrari.blog;
 
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.AudioAttributes;
@@ -27,11 +25,6 @@ import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.github.ybq.android.spinkit.SpinKitView;
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
-import com.r0adkll.slidr.Slidr;
-import com.r0adkll.slidr.model.SlidrConfig;
-import com.r0adkll.slidr.model.SlidrListener;
 import com.rackluxury.ferrari.R;
 
 public class BlogDetailActivity extends AppCompatActivity {
@@ -40,11 +33,9 @@ public class BlogDetailActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private WebView webview;
 
-    private ConstraintLayout layout;
     private AnimatedVectorDrawable avd2;
     private AnimatedVectorDrawableCompat avd;
     private ImageView mainGreyHeart;
-    private ImageView liker;
     private CardView cardViewLike;
     private ImageView mainRedHeart;
     private ImageView heart;
@@ -61,11 +52,11 @@ public class BlogDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog_detail);
-        layout = findViewById(R.id.conLayBlogDetail);
+        ConstraintLayout layout = findViewById(R.id.conLayBlogDetail);
         spinKitView = findViewById(R.id.skBlogDetail);
         toolbar = findViewById(R.id.toolbarBlogDetail);
         webview = findViewById(R.id.wvBlogDetail);
-        liker = findViewById(R.id.ivBlogDetailLiker);
+        ImageView liker = findViewById(R.id.ivBlogDetailLiker);
         mainGreyHeart = findViewById(R.id.ivBlogDetailGreyHeart);
         cardViewLike = findViewById(R.id.cvBlogLikerOptions);
         mainRedHeart = findViewById(R.id.ivBlogDetailRedHeart);

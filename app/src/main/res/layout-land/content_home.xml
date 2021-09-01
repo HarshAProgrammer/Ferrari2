@@ -42,7 +42,8 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/fabFavCategories"
             app:layout_constraintEnd_toEndOf="@+id/fabFavCategories"
-            app:srcCompat="@drawable/ic_video" />
+            app:srcCompat="@drawable/ic_video"
+            android:contentDescription="TODO" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabFavCategories"
@@ -59,7 +60,8 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/fabMoreCategories"
             app:layout_constraintEnd_toEndOf="@+id/fabMoreCategories"
-            app:srcCompat="@drawable/ic_heart_white" />
+            app:srcCompat="@drawable/ic_heart_white"
+            android:contentDescription="TODO" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabMoreCategories"
@@ -76,7 +78,8 @@
             app:pressedTranslationZ="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_add" />
+            app:srcCompat="@drawable/ic_add"
+            android:contentDescription="TODO" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

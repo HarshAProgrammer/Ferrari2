@@ -77,7 +77,8 @@ Blog     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_reaction_heart" />
+                        android:src="@drawable/ic_reaction_heart"
+                        android:contentDescription="TODO" />
 
                     <ImageView
                         android:id="@+id/ivBloDetailReactHappy"
@@ -85,7 +86,8 @@ Blog     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_reaction_happy" />
+                        android:src="@drawable/ic_reaction_happy"
+                        android:contentDescription="TODO" />
 
                     <ImageView
                         android:id="@+id/ivBloDetailReactLove"
@@ -93,7 +95,8 @@ Blog     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_reaction_love" />
+                        android:src="@drawable/ic_reaction_love"
+                        android:contentDescription="TODO" />
 
                     <ImageView
                         android:id="@+id/ivBloDetailReactSad"
@@ -101,7 +104,8 @@ Blog     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_reaction_sad" />
+                        android:src="@drawable/ic_reaction_sad"
+                        android:contentDescription="TODO" />
 
                     <ImageView
                         android:id="@+id/ivBloDetailReactShocked"
@@ -109,7 +113,8 @@ Blog     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_reaction_shocked" />
+                        android:src="@drawable/ic_reaction_shocked"
+                        android:contentDescription="TODO" />
 
 
                 </LinearLayout>

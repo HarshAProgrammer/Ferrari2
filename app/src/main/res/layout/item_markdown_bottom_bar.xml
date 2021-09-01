@@ -6,4 +6,5 @@
     android:padding="8dp"
     android:background="?actionBarItemBackground"
     android:clickable="true"
-    android:focusable="true" />
+    android:focusable="true"
+    android:contentDescription="TODO" />

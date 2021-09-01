@@ -17,6 +17,7 @@
         android:id="@+id/collapse_indicator_image_view_item_nav_drawer_menu_group_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical" />
+        android:layout_gravity="center_vertical"
+        android:contentDescription="TODO" />
 
 </LinearLayout>

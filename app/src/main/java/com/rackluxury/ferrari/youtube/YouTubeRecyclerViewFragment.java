@@ -55,7 +55,6 @@ public class YouTubeRecyclerViewFragment extends Fragment {
     private ArrayList<String> mPlaylistTitles;
     private RecyclerView mRecyclerView;
     private PlaylistVideos mPlaylistVideos;
-    private RecyclerView.LayoutManager mLayoutManager;
     private Spinner mPlaylistSpinner;
     private PlaylistCardAdapter mPlaylistCardAdapter;
     private YouTube mYouTubeDataApi;
@@ -140,6 +139,7 @@ public class YouTubeRecyclerViewFragment extends Fragment {
         mRecyclerView.setHasFixedSize(true);
 
         Resources resources = getResources();
+        RecyclerView.LayoutManager mLayoutManager;
         if (resources.getBoolean(R.bool.isTabletYoutube)) {
             // use a staggered grid layout if we're on a large screen device
             mLayoutManager = new StaggeredGridLayoutManager(resources.getInteger(R.integer.columns), StaggeredGridLayoutManager.VERTICAL);

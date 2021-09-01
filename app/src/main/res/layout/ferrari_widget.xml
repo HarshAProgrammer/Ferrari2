@@ -13,7 +13,8 @@
         android:background="#FFF"
         android:src="@drawable/widget_icon"
         android:visibility="gone"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:contentDescription="TODO" />
     <Button
         android:id="@+id/ferrari_widget_button"
         style="@style/StrokeButtonStyle"

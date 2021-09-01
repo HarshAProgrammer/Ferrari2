@@ -25,6 +25,7 @@
         android:layout_gravity="center_vertical"
         android:clickable="true"
         android:focusable="true"
-        android:background="?attr/selectableItemBackground" />
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="TODO" />
 
 </LinearLayout>

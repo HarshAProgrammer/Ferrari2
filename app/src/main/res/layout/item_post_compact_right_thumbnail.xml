@@ -46,7 +46,8 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/post_time_text_view_item_post_compact_right_thumbnail"
@@ -93,7 +94,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/thumbnail_compact_layout_rounded_edge"
-                    android:scaleType="center" />
+                    android:scaleType="center"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/play_button_image_view_item_post_compact_right_thumbnail"
@@ -103,7 +105,8 @@
                     android:layout_margin="0dp"
                     android:background="@drawable/play_button_round_background"
                     android:src="@drawable/ic_play_circle_36dp"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:contentDescription="TODO" />
 
             </FrameLayout>
 
@@ -133,7 +136,8 @@
                 android:layout_height="72dp"
                 android:scaleType="center"
                 android:src="@drawable/ic_link"
-                app:tint="@android:color/tab_indicator_text" />
+                app:tint="@android:color/tab_indicator_text"
+                android:contentDescription="TODO" />
 
         </FrameLayout>
 
@@ -235,21 +239,24 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_archive_outline"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:contentDescription="TODO" />
 
             <ImageView
                 android:id="@+id/locked_image_view_item_post_compact_right_thumbnail"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_outline_lock_24dp"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:contentDescription="TODO" />
 
             <ImageView
                 android:id="@+id/crosspost_image_view_item_post_compact_right_thumbnail"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/crosspost"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:contentDescription="TODO" />
 
         </com.nex3z.flowlayout.FlowLayout>
 
@@ -295,7 +302,8 @@
             android:src="@drawable/ic_arrow_upward_grey_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/score_text_view_item_post_compact_right_thumbnail"
@@ -323,7 +331,8 @@
             android:src="@drawable/ic_arrow_downward_grey_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/score_text_view_item_post_compact_right_thumbnail"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/comments_count_item_post_compact_right_thumbnail"
@@ -358,7 +367,8 @@
             app:layout_constraintEnd_toStartOf="@id/share_button_item_post_compact_right_thumbnail"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toEndOf="@id/comments_count_item_post_compact_right_thumbnail"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/share_button_item_post_compact_right_thumbnail"
@@ -374,7 +384,8 @@
             android:src="@drawable/ic_share_grey_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

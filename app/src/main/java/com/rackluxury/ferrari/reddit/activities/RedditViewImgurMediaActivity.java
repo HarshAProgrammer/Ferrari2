@@ -75,7 +75,6 @@ public class RedditViewImgurMediaActivity extends AppCompatActivity implements S
     ViewPager viewPager;
     @BindView(R.id.load_image_error_linear_layout_view_imgur_media_activity)
     LinearLayout errorLinearLayout;
-    private SectionsPagerAdapter sectionsPagerAdapter;
     private ArrayList<ImgurMedia> images;
     @Inject
     @Named("imgur")
@@ -265,7 +264,7 @@ public class RedditViewImgurMediaActivity extends AppCompatActivity implements S
 
     private void setupViewPager() {
         setToolbarTitle(0);
-        sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         viewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {

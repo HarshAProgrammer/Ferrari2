@@ -66,7 +66,6 @@ public class ViewRedditGalleryVideoFragment extends Fragment {
     private Post.Gallery galleryVideo;
     private String subredditName;
     private SimpleExoPlayer player;
-    private DataSource.Factory dataSourceFactory;
     private boolean wasPlaying = false;
     private boolean isMute = false;
     private boolean isDownloading = false;
@@ -134,7 +133,7 @@ public class ViewRedditGalleryVideoFragment extends Fragment {
         TrackSelector trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
         player = ExoPlayerFactory.newSimpleInstance(activity, trackSelector);
         videoPlayerView.setPlayer(player);
-        dataSourceFactory = new DefaultDataSourceFactory(activity,
+        DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(activity,
                 Util.getUserAgent(activity, "Infinity"));
         player.prepare(new ProgressiveMediaSource.Factory(dataSourceFactory).createMediaSource(Uri.parse(galleryVideo.url)));
         preparePlayer(savedInstanceState);

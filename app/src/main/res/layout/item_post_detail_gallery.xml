@@ -176,21 +176,24 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/ic_archive_outline"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/locked_image_view_item_post_detail_gallery"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/ic_outline_lock_24dp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/crosspost_image_view_item_post_detail_gallery"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/crosspost"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/awards_text_view_item_post_detail_gallery"
@@ -226,7 +229,8 @@
                 android:layout_gravity="start"
                 android:scaleType="center"
                 android:background="@drawable/play_button_round_background"
-                android:src="@drawable/ic_gallery_reverse_color_24dp" />
+                android:src="@drawable/ic_gallery_reverse_color_24dp"
+                android:contentDescription="TODO" />
 
         </FrameLayout>
 
@@ -264,7 +268,8 @@
         android:layout_height="150dp"
         android:scaleType="center"
         android:src="@drawable/ic_link"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="TODO" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -282,7 +287,8 @@
             android:focusable="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/score_text_view_item_post_detail_gallery"
@@ -307,7 +313,8 @@
             android:focusable="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/score_text_view_item_post_detail_gallery" />
+            app:layout_constraintStart_toEndOf="@id/score_text_view_item_post_detail_gallery"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/comments_count_item_post_detail_gallery"
@@ -336,7 +343,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/comments_count_item_post_detail_gallery"
-            app:layout_constraintEnd_toStartOf="@id/share_button_item_post_detail_gallery" />
+            app:layout_constraintEnd_toStartOf="@id/share_button_item_post_detail_gallery"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/share_button_item_post_detail_gallery"
@@ -349,7 +357,8 @@
             android:focusable="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="TODO" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

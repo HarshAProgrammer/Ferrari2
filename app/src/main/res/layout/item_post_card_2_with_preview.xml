@@ -34,7 +34,8 @@
             android:layout_gravity="start"
             android:scaleType="center"
             android:background="@drawable/play_button_round_background"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ProgressBar
             android:id="@+id/progress_bar_item_post_card_2_with_preview"
@@ -67,7 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="center"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -159,28 +161,32 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_archive_outline"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/locked_image_view_item_post_card_2_with_preview"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_outline_lock_24dp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/crosspost_image_view_item_post_card_2_with_preview"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/crosspost"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/stickied_post_image_view_item_post_card_2_with_preview"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/link_text_view_item_post_card_2_with_preview"
@@ -246,7 +252,8 @@
             android:focusable="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/score_text_view_item_post_card_2_with_preview"
@@ -271,7 +278,8 @@
             android:focusable="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/score_text_view_item_post_card_2_with_preview" />
+            app:layout_constraintStart_toEndOf="@id/score_text_view_item_post_card_2_with_preview"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/comments_count_item_post_card_2_with_preview"
@@ -300,7 +308,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/comments_count_item_post_card_2_with_preview"
-            app:layout_constraintEnd_toStartOf="@id/share_button_item_post_card_2_with_preview" />
+            app:layout_constraintEnd_toStartOf="@id/share_button_item_post_card_2_with_preview"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/share_button_item_post_card_2_with_preview"
@@ -313,7 +322,8 @@
             android:focusable="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="TODO" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

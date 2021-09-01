@@ -31,7 +31,8 @@
         <ImageView
             android:id="@+id/fetch_subreddit_listing_info_image_view_subreddit_listing_fragment"
             android:layout_width="150dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/fetch_subreddit_listing_info_text_view_subreddit_listing_fragment"

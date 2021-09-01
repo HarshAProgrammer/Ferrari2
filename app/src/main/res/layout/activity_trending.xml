@@ -59,7 +59,8 @@
         <ImageView
             android:id="@+id/fetch_trending_search_image_view_trending_activity"
             android:layout_width="150dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/fetch_trending_search_text_view_trending_activity"

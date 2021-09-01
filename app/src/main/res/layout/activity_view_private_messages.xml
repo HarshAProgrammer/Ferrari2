@@ -79,7 +79,8 @@
                 android:src="@drawable/ic_send_black_24dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="?attr/selectableItemBackgroundBorderless" />
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="TODO" />
 
         </LinearLayout>
 

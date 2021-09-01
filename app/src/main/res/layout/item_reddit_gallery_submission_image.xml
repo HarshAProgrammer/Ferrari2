@@ -23,6 +23,7 @@
         android:layout_gravity="top|end"
         android:background="@drawable/play_button_round_background"
         android:src="@drawable/ic_close_24dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="TODO" />
 
 </FrameLayout>

@@ -134,7 +134,8 @@
                     android:src="@drawable/ic_arrow_upward_grey_24dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="TODO" />
 
                 <TextView
                     android:id="@+id/score_text_view_item_post_comment"
@@ -161,7 +162,8 @@
                     app:layout_constraintEnd_toStartOf="@id/more_button_item_post_comment"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintHorizontal_bias="0" />
+                    app:layout_constraintHorizontal_bias="0"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/more_button_item_post_comment"
@@ -174,7 +176,8 @@
                     android:src="@drawable/ic_more_vert_grey_24dp"
                     app:layout_constraintEnd_toStartOf="@+id/expand_button_item_post_comment"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/expand_button_item_post_comment"
@@ -188,7 +191,8 @@
                     android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/save_button_item_post_comment"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/save_button_item_post_comment"
@@ -200,7 +204,8 @@
                     android:focusable="true"
                     app:layout_constraintEnd_toStartOf="@+id/reply_button_item_post_comment"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/reply_button_item_post_comment"
@@ -213,7 +218,8 @@
                     android:src="@drawable/ic_reply_grey_24dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="TODO" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

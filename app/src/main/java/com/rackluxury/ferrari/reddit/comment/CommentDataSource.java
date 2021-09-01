@@ -216,13 +216,11 @@ public class CommentDataSource extends PageKeyedDataSource<String, Comment> {
 
     private static class ParseCommentAsyncTask extends AsyncTask<Void, ArrayList<Comment>, ArrayList<Comment>> {
         private String after;
-        private final Locale locale;
         private JSONArray commentsJSONArray;
         private boolean parseFailed;
         private final ParseCommentAsyncTaskListener parseCommentAsyncTaskListener;
 
         ParseCommentAsyncTask(String response, Locale locale, ParseCommentAsyncTaskListener parseCommentAsyncTaskListener) {
-            this.locale = locale;
             this.parseCommentAsyncTaskListener = parseCommentAsyncTaskListener;
             try {
                 JSONObject data = new JSONObject(response).getJSONObject(JSONUtils.DATA_KEY);

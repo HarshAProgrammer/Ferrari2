@@ -27,7 +27,8 @@
         android:layout_height="150dp"
         android:scaleType="center"
         android:background="@drawable/thumbnail_compact_layout_rounded_edge"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/video_or_gif_indicator_image_view_item_post_gallery"
@@ -37,7 +38,8 @@
         android:layout_gravity="start"
         android:scaleType="center"
         android:background="@drawable/play_button_round_background"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="TODO" />
 
     <RelativeLayout
         android:id="@+id/load_image_error_relative_layout_item_post_gallery"

@@ -23,7 +23,6 @@ public class FavAdapterCategories extends RecyclerView.Adapter<FavAdapterCategor
 
     private final Context context;
     private final List<FavItemCategories> favItemListCategories;
-    private FavDBCategories favDB;
 
 
     public FavAdapterCategories(Context context, List<FavItemCategories> favItemListCategories) {
@@ -36,7 +35,7 @@ public class FavAdapterCategories extends RecyclerView.Adapter<FavAdapterCategor
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fav_item_categories,
                 parent, false);
-        favDB = new FavDBCategories(context);
+        FavDBCategories favDB = new FavDBCategories(context);
         return new ViewHolder(view);
     }
 

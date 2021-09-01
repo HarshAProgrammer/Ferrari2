@@ -42,7 +42,8 @@
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="TODO" />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox__item_user_listing"

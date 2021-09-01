@@ -18,13 +18,11 @@ import com.rackluxury.ferrari.R;
 public class BlogNotificationService extends FirebaseMessagingService {
 
 
-    private Bitmap bitmap;
-    private BitmapDrawable drawable;
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
 
-        drawable = (BitmapDrawable) ContextCompat.getDrawable(getApplicationContext(),R.drawable.splashscreen);
-        bitmap = drawable.getBitmap();
+        BitmapDrawable drawable = (BitmapDrawable) ContextCompat.getDrawable(getApplicationContext(), R.drawable.splashscreen);
+        Bitmap bitmap = drawable.getBitmap();
 
         String title = remoteMessage.getNotification().getTitle();
         String body = remoteMessage.getNotification().getBody();

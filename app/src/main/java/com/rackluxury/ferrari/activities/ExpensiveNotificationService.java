@@ -19,15 +19,13 @@ import static com.rackluxury.ferrari.activities.App.FCM_CHANNEL_ID;
 
 public class ExpensiveNotificationService extends FirebaseMessagingService {
 
-    private Bitmap bitmap;
-    private BitmapDrawable drawable;
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
 
-            drawable = (BitmapDrawable) ContextCompat.getDrawable(getApplicationContext(),R.drawable.expensive_checker);
-            bitmap = drawable.getBitmap();
+        BitmapDrawable drawable = (BitmapDrawable) ContextCompat.getDrawable(getApplicationContext(), R.drawable.expensive_checker);
+        Bitmap bitmap = drawable.getBitmap();
 
 
         if (remoteMessage.getNotification() != null) {

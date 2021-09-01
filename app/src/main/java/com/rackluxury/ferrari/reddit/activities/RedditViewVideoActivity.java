@@ -133,12 +133,10 @@ public class RedditViewVideoActivity extends AppCompatActivity {
     private boolean wasPlaying;
     private boolean isDownloading = false;
     private boolean isMute = false;
-    private String postTitle;
     private boolean isNSFW;
     private long resumePosition = -1;
     private int videoType;
     private boolean isDataSavingMode;
-    private boolean isHd;
     private Integer originalOrientation;
 
     @Inject
@@ -203,7 +201,7 @@ public class RedditViewVideoActivity extends AppCompatActivity {
         } else if (dataSavingModeString.equals(SharedPreferencesUtils.DATA_SAVING_MODE_ONLY_ON_CELLULAR_DATA)) {
             isDataSavingMode = networkType == Utils.NETWORK_TYPE_CELLULAR;
         }
-        isHd = !isDataSavingMode;
+        boolean isHd = !isDataSavingMode;
 
         if (!mSharedPreferences.getBoolean(SharedPreferencesUtils.VIDEO_PLAYER_IGNORE_NAV_BAR, false)) {
             if (resources.getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT || resources.getBoolean(R.bool.isTabletReddit)) {
@@ -228,7 +226,7 @@ public class RedditViewVideoActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        postTitle = intent.getStringExtra(EXTRA_POST_TITLE);
+        String postTitle = intent.getStringExtra(EXTRA_POST_TITLE);
         isNSFW = intent.getBooleanExtra(EXTRA_IS_NSFW, false);
         if (savedInstanceState == null) {
             resumePosition = intent.getLongExtra(EXTRA_PROGRESS_SECONDS, -1);

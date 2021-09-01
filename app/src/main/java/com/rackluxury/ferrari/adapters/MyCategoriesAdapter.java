@@ -45,7 +45,6 @@ import java.util.List;
 public class MyCategoriesAdapter extends RecyclerView.Adapter<MyCategoriesAdapter.CategoriesViewHolder> {
     private final Context mContext;
     private int lastPosition = -1;
-    private FirebaseAuth firebaseAuth;
     private FavDBCategories favDB;
     private List<CategoriesData> mCategoriesData;
 
@@ -120,7 +119,7 @@ public class MyCategoriesAdapter extends RecyclerView.Adapter<MyCategoriesAdapte
 
     private void likeClick(CategoriesData categoriesData, Button favBtn, final TextView textLike) {
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         DatabaseReference refLikeCategories = FirebaseDatabase.getInstance().getReference().child(firebaseAuth.getUid()).child("likes").child("categoriesLikes");
         final DatabaseReference upvotesRefLikeCategories = refLikeCategories.child(categoriesData.getKey_id());
 

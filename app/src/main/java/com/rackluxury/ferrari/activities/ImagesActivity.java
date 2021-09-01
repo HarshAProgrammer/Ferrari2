@@ -58,7 +58,6 @@ public class ImagesActivity extends AppCompatActivity implements ImagesAdapter.O
     private RequestQueue mRequestQueue;
     private int lastPosition;
     private SpinKitView spinKitView;
-    private ImagesAdapter adapter;
     private ShimmerFrameLayout shimmerFrameLayout;
 
 
@@ -71,7 +70,7 @@ public class ImagesActivity extends AppCompatActivity implements ImagesAdapter.O
         backIcon = findViewById(R.id.backIconImages);
         mRecyclerView = findViewById(R.id.rvImages);
         spinKitView = findViewById(R.id.spin_kit_images);
-        adapter = new ImagesAdapter(this, mImagesList);
+        ImagesAdapter adapter = new ImagesAdapter(this, mImagesList);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.hasFixedSize();

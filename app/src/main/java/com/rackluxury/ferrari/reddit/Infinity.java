@@ -24,7 +24,6 @@ import ml.docilealligator.infinityforreddit.EventBusIndex;
 
 public class Infinity extends Application implements LifecycleObserver {
     private com.rackluxury.ferrari.reddit.AppComponent mAppComponent;
-    private NetworkWifiStatusReceiver mNetworkWifiStatusReceiver;
 
     @Override
     public void onCreate() {
@@ -87,8 +86,7 @@ public class Infinity extends Application implements LifecycleObserver {
 
         EventBus.builder().addIndex(new EventBusIndex()).installDefaultEventBus();
 
-        mNetworkWifiStatusReceiver =
-                new NetworkWifiStatusReceiver(() -> EventBus.getDefault().post(new ChangeNetworkStatusEvent(Utils.getConnectedNetwork(getApplicationContext()))));
+        NetworkWifiStatusReceiver mNetworkWifiStatusReceiver = new NetworkWifiStatusReceiver(() -> EventBus.getDefault().post(new ChangeNetworkStatusEvent(Utils.getConnectedNetwork(getApplicationContext()))));
         registerReceiver(mNetworkWifiStatusReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
 
         registerReceiver(new WallpaperChangeReceiver(), new IntentFilter(Intent.ACTION_WALLPAPER_CHANGED));

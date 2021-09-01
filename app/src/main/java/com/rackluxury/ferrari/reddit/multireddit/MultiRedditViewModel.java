@@ -13,13 +13,12 @@ import java.util.List;
 import com.rackluxury.ferrari.reddit.RedditDataRoomDatabase;
 
 public class MultiRedditViewModel extends AndroidViewModel {
-    private final MultiRedditRepository mMultiRedditRepository;
     private final LiveData<List<MultiReddit>> mAllMultiReddits;
     private final LiveData<List<MultiReddit>> mAllFavoriteMultiReddits;
 
     public MultiRedditViewModel(Application application, RedditDataRoomDatabase redditDataRoomDatabase, String accountName) {
         super(application);
-        mMultiRedditRepository = new MultiRedditRepository(redditDataRoomDatabase, accountName);
+        MultiRedditRepository mMultiRedditRepository = new MultiRedditRepository(redditDataRoomDatabase, accountName);
         mAllMultiReddits = mMultiRedditRepository.getAllMultiReddits();
         mAllFavoriteMultiReddits = mMultiRedditRepository.getAllFavoriteMultiReddits();
     }

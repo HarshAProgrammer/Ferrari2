@@ -141,29 +141,19 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
     private final MarkwonAdapter mMarkwonAdapter;
     private final int mImageViewWidth;
     private final String mAccessToken;
-    private final String mAccountName;
     private Post mPost;
-    private final ArrayList<Comment> mVisibleComments;
     private final String mSubredditNamePrefixed;
     private final Locale mLocale;
-    private final String mSingleCommentId;
-    private final boolean mIsSingleCommentThreadMode;
     private boolean mNeedBlurNsfw;
     private boolean mDoNotBlurNsfwInNsfwSubreddits;
     private boolean mNeedBlurSpoiler;
     private final boolean mVoteButtonsOnTheRight;
     private final boolean mShowElapsedTime;
     private final String mTimeFormatPattern;
-    private final boolean mExpandChildren;
-    private final boolean mCommentToolbarHidden;
-    private final boolean mCommentToolbarHideOnClick;
-    private final boolean mSwapTapAndLong;
-    private final boolean mShowCommentDivider;
     private final boolean mShowAbsoluteNumberOfVotes;
     private boolean mAutoplay = false;
     private final boolean mAutoplayNsfwVideos;
     private final boolean mMuteAutoplayingVideos;
-    private final boolean mFullyCollapseComment;
     private final double mStartAutoplayVisibleAreaOffset;
     private final boolean mMuteNSFWVideo;
     private final boolean mAutomaticallyTryRedgifs;
@@ -171,10 +161,6 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
     private final boolean mDisableImagePreview;
     private final boolean mOnlyDisablePreviewInVideoAndGifPosts;
     private final PostDetailRecyclerViewAdapterCallback mPostDetailRecyclerViewAdapterCallback;
-    private final boolean isInitiallyLoading;
-    private final boolean isInitiallyLoadingFailed;
-    private final boolean mHasMoreComments;
-    private final boolean loadMoreCommentsFailed;
 
     private final int mColorAccent;
     private final int mCardViewColor;
@@ -202,7 +188,6 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
     private final int mDownvotedColor;
     private final int mVoteAndReplyUnavailableVoteButtonColor;
     private final int mPostIconAndInfoColor;
-    private final int mCommentIconAndInfoColor;
 
     private final Drawable mCommentIcon;
     private final float mScale;
@@ -344,25 +329,22 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
                 .build();
         mImageViewWidth = imageViewWidth;
         mAccessToken = accessToken;
-        mAccountName = accountName;
         mPost = post;
-        mVisibleComments = new ArrayList<>();
+        ArrayList<Comment> mVisibleComments = new ArrayList<>();
         mSubredditNamePrefixed = post.getSubredditNamePrefixed();
         mLocale = locale;
-        mSingleCommentId = singleCommentId;
-        mIsSingleCommentThreadMode = isSingleCommentThreadMode;
 
-        mNeedBlurNsfw = nsfwAndSpoilerSharedPreferences.getBoolean((mAccountName == null ? "" : mAccountName) + SharedPreferencesUtils.BLUR_NSFW_BASE, true);
-        mDoNotBlurNsfwInNsfwSubreddits = nsfwAndSpoilerSharedPreferences.getBoolean((mAccountName == null ? "" : mAccountName) + SharedPreferencesUtils.DO_NOT_BLUR_NSFW_IN_NSFW_SUBREDDITS, false);
-        mNeedBlurSpoiler = nsfwAndSpoilerSharedPreferences.getBoolean((mAccountName == null ? "" : mAccountName) + SharedPreferencesUtils.BLUR_SPOILER_BASE, false);
+        mNeedBlurNsfw = nsfwAndSpoilerSharedPreferences.getBoolean((accountName == null ? "" : accountName) + SharedPreferencesUtils.BLUR_NSFW_BASE, true);
+        mDoNotBlurNsfwInNsfwSubreddits = nsfwAndSpoilerSharedPreferences.getBoolean((accountName == null ? "" : accountName) + SharedPreferencesUtils.DO_NOT_BLUR_NSFW_IN_NSFW_SUBREDDITS, false);
+        mNeedBlurSpoiler = nsfwAndSpoilerSharedPreferences.getBoolean((accountName == null ? "" : accountName) + SharedPreferencesUtils.BLUR_SPOILER_BASE, false);
         mVoteButtonsOnTheRight = sharedPreferences.getBoolean(SharedPreferencesUtils.VOTE_BUTTONS_ON_THE_RIGHT_KEY, false);
         mShowElapsedTime = sharedPreferences.getBoolean(SharedPreferencesUtils.SHOW_ELAPSED_TIME_KEY, false);
         mTimeFormatPattern = sharedPreferences.getString(SharedPreferencesUtils.TIME_FORMAT_KEY, SharedPreferencesUtils.TIME_FORMAT_DEFAULT_VALUE);
-        mExpandChildren = !sharedPreferences.getBoolean(SharedPreferencesUtils.SHOW_TOP_LEVEL_COMMENTS_FIRST, false);
-        mCommentToolbarHidden = sharedPreferences.getBoolean(SharedPreferencesUtils.COMMENT_TOOLBAR_HIDDEN, false);
-        mCommentToolbarHideOnClick = sharedPreferences.getBoolean(SharedPreferencesUtils.COMMENT_TOOLBAR_HIDE_ON_CLICK, true);
-        mSwapTapAndLong = sharedPreferences.getBoolean(SharedPreferencesUtils.SWAP_TAP_AND_LONG_COMMENTS, false);
-        mShowCommentDivider = sharedPreferences.getBoolean(SharedPreferencesUtils.SHOW_COMMENT_DIVIDER, false);
+        boolean mExpandChildren = !sharedPreferences.getBoolean(SharedPreferencesUtils.SHOW_TOP_LEVEL_COMMENTS_FIRST, false);
+        boolean mCommentToolbarHidden = sharedPreferences.getBoolean(SharedPreferencesUtils.COMMENT_TOOLBAR_HIDDEN, false);
+        boolean mCommentToolbarHideOnClick = sharedPreferences.getBoolean(SharedPreferencesUtils.COMMENT_TOOLBAR_HIDE_ON_CLICK, true);
+        boolean mSwapTapAndLong = sharedPreferences.getBoolean(SharedPreferencesUtils.SWAP_TAP_AND_LONG_COMMENTS, false);
+        boolean mShowCommentDivider = sharedPreferences.getBoolean(SharedPreferencesUtils.SHOW_COMMENT_DIVIDER, false);
         mShowAbsoluteNumberOfVotes = sharedPreferences.getBoolean(SharedPreferencesUtils.SHOW_ABSOLUTE_NUMBER_OF_VOTES, true);
 
         String autoplayString = sharedPreferences.getString(SharedPreferencesUtils.VIDEO_AUTOPLAY, SharedPreferencesUtils.VIDEO_AUTOPLAY_VALUE_NEVER);
@@ -374,7 +356,7 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         }
         mAutoplayNsfwVideos = sharedPreferences.getBoolean(SharedPreferencesUtils.AUTOPLAY_NSFW_VIDEOS, true);
         mMuteAutoplayingVideos = sharedPreferences.getBoolean(SharedPreferencesUtils.MUTE_AUTOPLAYING_VIDEOS, true);
-        mFullyCollapseComment = sharedPreferences.getBoolean(SharedPreferencesUtils.FULLY_COLLAPSE_COMMENT, false);
+        boolean mFullyCollapseComment = sharedPreferences.getBoolean(SharedPreferencesUtils.FULLY_COLLAPSE_COMMENT, false);
 
         Resources resources = activity.getResources();
         mStartAutoplayVisibleAreaOffset = resources.getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT ?
@@ -394,10 +376,10 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         mOnlyDisablePreviewInVideoAndGifPosts = sharedPreferences.getBoolean(SharedPreferencesUtils.ONLY_DISABLE_PREVIEW_IN_VIDEO_AND_GIF_POSTS, false);
 
         mPostDetailRecyclerViewAdapterCallback = postDetailRecyclerViewAdapterCallback;
-        isInitiallyLoading = true;
-        isInitiallyLoadingFailed = false;
-        mHasMoreComments = false;
-        loadMoreCommentsFailed = false;
+        boolean isInitiallyLoading = true;
+        boolean isInitiallyLoadingFailed = false;
+        boolean mHasMoreComments = false;
+        boolean loadMoreCommentsFailed = false;
         mScale = resources.getDisplayMetrics().density;
 
         mColorAccent = customThemeWrapper.getColorAccent();
@@ -425,7 +407,7 @@ public class PostDetailRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         mDownvotedColor = customThemeWrapper.getDownvoted();
         mVoteAndReplyUnavailableVoteButtonColor = customThemeWrapper.getVoteAndReplyUnavailableButtonColor();
         mPostIconAndInfoColor = customThemeWrapper.getPostIconAndInfoColor();
-        mCommentIconAndInfoColor = customThemeWrapper.getCommentIconAndInfoColor();
+        int mCommentIconAndInfoColor = customThemeWrapper.getCommentIconAndInfoColor();
 
         mCommentIcon = activity.getDrawable(R.drawable.ic_comment_grey_24dp);
         if (mCommentIcon != null) {

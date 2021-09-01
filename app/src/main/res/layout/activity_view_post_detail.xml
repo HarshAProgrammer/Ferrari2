@@ -45,7 +45,8 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:tint="@android:color/white"
-        app:srcCompat="@drawable/ic_keyboard_arrow_down_24dp" />
+        app:srcCompat="@drawable/ic_keyboard_arrow_down_24dp"
+        android:contentDescription="TODO" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/search_panel_material_card_view_view_post_detail_activity"
@@ -92,7 +93,8 @@
                 android:src="@drawable/ic_arrow_upward_black_24dp"
                 android:background="?actionBarItemBackground"
                 android:clickable="true"
-                android:focusable="true" />
+                android:focusable="true"
+                android:contentDescription="TODO" />
 
             <ImageView
                 android:id="@+id/next_result_image_view_view_post_detail_activity"
@@ -103,7 +105,8 @@
                 android:src="@drawable/ic_arrow_downward_black_24dp"
                 android:background="?actionBarItemBackground"
                 android:clickable="true"
-                android:focusable="true" />
+                android:focusable="true"
+                android:contentDescription="TODO" />
 
             <ImageView
                 android:id="@+id/close_search_panel_image_view_view_post_detail_activity"
@@ -114,7 +117,8 @@
                 android:src="@drawable/ic_close_black_24dp"
                 android:background="?actionBarItemBackground"
                 android:clickable="true"
-                android:focusable="true" />
+                android:focusable="true"
+                android:contentDescription="TODO" />
 
         </LinearLayout>
 

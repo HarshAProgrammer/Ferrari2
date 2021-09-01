@@ -17,7 +17,8 @@
             android:layout_height="200dp"
             android:background="@color/colorBlack"
             android:scaleType="centerCrop"
-            android:src="@drawable/splashscreen" />
+            android:src="@drawable/splashscreen"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/ivVolumeVideoItem"
@@ -91,7 +92,8 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@drawable/ic_more_vert" />
+            android:src="@drawable/ic_more_vert"
+            android:contentDescription="TODO" />
 
 
     </LinearLayout>

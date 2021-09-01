@@ -217,7 +217,8 @@
                     android:layout_gravity="start"
                     android:background="@drawable/play_button_round_background"
                     android:src="@drawable/ic_play_circle_36dp"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:contentDescription="TODO" />
 
             </FrameLayout>
 

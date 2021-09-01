@@ -203,7 +203,8 @@
                     app:layout_constraintHorizontal_chainStyle="spread"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@android:color/white" />
+                    app:tint="@android:color/white"
+                    android:contentDescription="TODO" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/select_from_library_fab_post_image_activity"
@@ -215,7 +216,8 @@
                     app:layout_constraintHorizontal_chainStyle="spread"
                     app:layout_constraintStart_toEndOf="@+id/capture_fab_post_image_activity"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@android:color/white" />
+                    app:tint="@android:color/white"
+                    android:contentDescription="TODO" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -236,7 +238,8 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitStart"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:contentDescription="TODO" />
 
         </LinearLayout>
 

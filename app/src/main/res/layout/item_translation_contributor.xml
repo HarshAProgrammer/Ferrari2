@@ -12,7 +12,8 @@
         android:id="@+id/country_flag_image_view_item_translation_contributor"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_gravity="center_vertical" />
+        android:layout_gravity="center_vertical"
+        android:contentDescription="TODO" />
 
     <LinearLayout
         android:layout_width="0dp"

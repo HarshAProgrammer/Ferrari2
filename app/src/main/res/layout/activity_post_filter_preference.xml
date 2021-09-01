@@ -48,6 +48,7 @@
         android:layout_gravity="bottom|end"
         app:backgroundTint="?attr/colorPrimaryLightTheme"
         app:srcCompat="@drawable/ic_add_day_night_24dp"
-        app:tint="@android:color/white" />
+        app:tint="@android:color/white"
+        android:contentDescription="TODO" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

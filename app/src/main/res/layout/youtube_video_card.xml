@@ -22,7 +22,8 @@
             android:layout_alignParentTop="true"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            tools:src="@drawable/ic_thumb_up" />
+            tools:src="@drawable/ic_thumb_up"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/tvYoutubeVideoTitle"
@@ -61,7 +62,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvYoutubeVideoViewCount"
-                android:src="@drawable/ic_share" />
+                android:src="@drawable/ic_share"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/tvYoutubeVideoShareText"
@@ -85,7 +87,8 @@
                 android:layout_below="@id/tvYoutubeVideoViewCount"
                 android:layout_toLeftOf="@+id/tvYoutubeVideoLikeCount"
                 android:gravity="center_vertical"
-                android:src="@drawable/ic_thumb_up" />
+                android:src="@drawable/ic_thumb_up"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/tvYoutubeVideoLikeCount"
@@ -110,7 +113,8 @@
                 android:layout_below="@id/tvYoutubeVideoViewCount"
                 android:layout_toLeftOf="@+id/tvYoutubeVideoDislikeCount"
                 android:gravity="center_vertical"
-                android:src="@drawable/ic_thumb_down" />
+                android:src="@drawable/ic_thumb_down"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/tvYoutubeVideoDislikeCount"

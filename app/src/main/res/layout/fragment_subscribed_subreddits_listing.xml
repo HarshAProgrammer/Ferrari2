@@ -30,7 +30,8 @@
         <ImageView
             android:id="@+id/no_subscriptions_image_view_subreddits_listing_fragment"
             android:layout_width="150dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/error_text_view_subscribed_subreddits_listing_fragment"

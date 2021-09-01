@@ -212,7 +212,6 @@ public class PostFragment extends Fragment implements FragmentCommunicator {
     private boolean isInLazyMode = false;
     private boolean isLazyModePaused = false;
     private boolean hasPost = false;
-    private boolean isShown = false;
     private boolean savePostFeedScrolledPosition;
     private boolean rememberMutingOptionInPostFeed;
     private Boolean masterMutingOption;
@@ -254,7 +253,7 @@ public class PostFragment extends Fragment implements FragmentCommunicator {
     @Override
     public void onResume() {
         super.onResume();
-        isShown = true;
+        boolean isShown = true;
         if (mPostRecyclerView.getAdapter() != null) {
             ((PostRecyclerViewAdapter) mPostRecyclerView.getAdapter()).setCanStartActivity(true);
         }

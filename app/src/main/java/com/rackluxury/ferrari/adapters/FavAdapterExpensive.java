@@ -24,7 +24,6 @@ public class FavAdapterExpensive extends RecyclerView.Adapter<FavAdapterExpensiv
 
     private final Context context;
     private final List<FavItemExpensive> favItemListExpensive;
-    private FavDBExpensive favDB;
 
 
     public FavAdapterExpensive(Context context, List<FavItemExpensive> favItemListExpensive) {
@@ -37,7 +36,7 @@ public class FavAdapterExpensive extends RecyclerView.Adapter<FavAdapterExpensiv
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fav_item_expensive,
                 parent, false);
-        favDB = new FavDBExpensive(context);
+        FavDBExpensive favDB = new FavDBExpensive(context);
         return new ViewHolder(view);
     }
 

@@ -74,7 +74,6 @@ public class ImagesDetailActivity extends AppCompatActivity {
     private AnimatedVectorDrawable avd2;
     private AnimatedVectorDrawableCompat avd;
     private ImageView mainGreyHeart;
-    private ImageView liker;
     private CardView cardViewLike;
     private ImageView mainRedHeart;
     private ImageView heart;
@@ -99,7 +98,7 @@ public class ImagesDetailActivity extends AppCompatActivity {
         TextView textViewDownloads = findViewById(R.id.tvDownloadImageDetail);
         ImageView backIcon = findViewById(R.id.backIconImagesDetail);
         ImageView optionsIcon = findViewById(R.id.optionsIconImagesDetail);
-        liker = findViewById(R.id.ivImagesDetailLiker);
+        ImageView liker = findViewById(R.id.ivImagesDetailLiker);
 
         mainGreyHeart = findViewById(R.id.ivImagesDetailGreyHeart);
         cardViewLike = findViewById(R.id.cvImagesDetailLikerOptions);

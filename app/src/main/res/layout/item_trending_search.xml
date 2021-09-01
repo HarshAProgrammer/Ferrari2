@@ -57,7 +57,8 @@
         android:layout_height="150dp"
         android:scaleType="center"
         android:src="@drawable/ic_image_24dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/title_text_view_item_trending_search"

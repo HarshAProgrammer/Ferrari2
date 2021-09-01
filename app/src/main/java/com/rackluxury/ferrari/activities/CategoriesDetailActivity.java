@@ -63,7 +63,6 @@ public class CategoriesDetailActivity extends AppCompatActivity {
     private FileOutputStream outputStream;
     private Bitmap bitmap;
     private BitmapDrawable drawable;
-    private MotionLayout categoriesDetailLay;
     private SharedPreferences prefs;
     private SoundPool soundPool;
     private int soundSave;
@@ -71,7 +70,6 @@ public class CategoriesDetailActivity extends AppCompatActivity {
     private int soundLike;
     private AnimatedVectorDrawable avd2;
     private AnimatedVectorDrawableCompat avd;
-    private ImageView liker;
     private ImageView mainGreyHeart;
     private CardView cardViewLike;
     private ImageView mainRedHeart;
@@ -119,11 +117,11 @@ public class CategoriesDetailActivity extends AppCompatActivity {
 
     private void setUpUIViewsDetailActivity() {
         toolbar = findViewById(R.id.toolbarCategoriesDetailActivity);
-        categoriesDetailLay = findViewById(R.id.motionLayCategoriesDetail);
+        MotionLayout categoriesDetailLay = findViewById(R.id.motionLayCategoriesDetail);
         categoriesName = findViewById(R.id.tvCategoriesDetailName);
         categoriesDescription = findViewById(R.id.tvCategoriesDetailDescription);
         categoriesImage = findViewById(R.id.ivCategoriesDetailImage);
-        liker = findViewById(R.id.ivCategoriesDetailLiker);
+        ImageView liker = findViewById(R.id.ivCategoriesDetailLiker);
         mainGreyHeart = findViewById(R.id.ivCategoriesDetailGreyHeart);
         cardViewLike = findViewById(R.id.cvCategoriesLikerOptions);
         mainRedHeart = findViewById(R.id.ivCategoriesDetailRedHeart);

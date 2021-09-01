@@ -19,27 +19,33 @@
         android:orientation="horizontal">
 
         <ImageButton android:id="@id/exo_rew"
-            style="@style/ExoMediaButton.Rewind" />
+            style="@style/ExoMediaButton.Rewind"
+            android:contentDescription="TODO" />
 
         <ImageButton android:id="@id/exo_play"
-            style="@style/ExoMediaButton.Play"/>
+            style="@style/ExoMediaButton.Play"
+            android:contentDescription="TODO" />
 
         <ImageButton android:id="@id/exo_pause"
-            style="@style/ExoMediaButton.Pause" />
+            style="@style/ExoMediaButton.Pause"
+            android:contentDescription="TODO" />
 
         <ImageButton android:id="@id/exo_ffwd"
-            style="@style/ExoMediaButton.FastForward" />
+            style="@style/ExoMediaButton.FastForward"
+            android:contentDescription="TODO" />
 
         <ImageButton
             android:id="@+id/mute_exo_playback_control_view"
             style="@style/ExoMediaButton"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
         <ImageButton
             android:id="@+id/hd_exo_playback_control_view"
             android:src="@drawable/ic_video_quality_24dp"
             style="@style/ExoMediaButton"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:contentDescription="TODO" />
 
     </LinearLayout>
 

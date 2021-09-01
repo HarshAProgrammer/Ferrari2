@@ -35,8 +35,6 @@ import retrofit2.Response;
 public class BlogActivity extends AppCompatActivity {
 
 
-    private Toolbar toolbar;
-    private RecyclerView recyclerView;
     private LinearLayoutManager manager;
     private BlogPostAdapter adapter;
     private final List<BlogItem> blogItems = new ArrayList<>();
@@ -51,7 +49,7 @@ public class BlogActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog);
-        recyclerView = findViewById(R.id.rvBlog);
+        RecyclerView recyclerView = findViewById(R.id.rvBlog);
         progress = findViewById(R.id.skBlog);
         adapter = new BlogPostAdapter(this, blogItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -100,7 +98,7 @@ public class BlogActivity extends AppCompatActivity {
 
 
     private void setUpToolbar() {
-        toolbar = findViewById(R.id.toolbarBlog);
+        Toolbar toolbar = findViewById(R.id.toolbarBlog);
 
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {

@@ -58,7 +58,6 @@ public class LoginActivity extends AppCompatActivity implements
     private FirebaseAuth.AuthStateListener authStateListener;
 
     private TextInputLayout textInputEmail;
-    private TextInputLayout textInputPassword;
     private EditText loginEmail;
     private EditText loginPassword;
     private TextView Info;
@@ -86,7 +85,7 @@ public class LoginActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_login);
 
         textInputEmail = findViewById(R.id.login_email_layout);
-        textInputPassword = findViewById(R.id.login_password_layout);
+        TextInputLayout textInputPassword = findViewById(R.id.login_password_layout);
         loginEmail = findViewById(R.id.etEmailLogin);
         loginPassword = findViewById(R.id.etPasswordLogin);
         Login = findViewById(R.id.btnLogin);

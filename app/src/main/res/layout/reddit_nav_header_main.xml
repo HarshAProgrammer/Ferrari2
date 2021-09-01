@@ -11,7 +11,8 @@
         android:id="@+id/banner_image_view_nav_header_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/profile_image_view_nav_header_main"
@@ -55,6 +56,7 @@
         android:layout_margin="16dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/ic_baseline_arrow_drop_down_24px" />
+        android:src="@drawable/ic_baseline_arrow_drop_down_24px"
+        android:contentDescription="TODO" />
 
 </RelativeLayout>
