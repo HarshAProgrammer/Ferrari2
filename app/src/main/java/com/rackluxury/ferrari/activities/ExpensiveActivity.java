@@ -191,10 +191,10 @@ public class ExpensiveActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(ExpensiveActivity.this, 1);
         expensiveRecyclerView.setLayoutManager(gridLayoutManager);
         myExpensiveList = new ArrayList<>();
-        mExpensiveData = new ExpensiveData("", ""
+        mExpensiveData = new ExpensiveData("2017 LaFerrari Aperta", "In 2017, Ferrari LaFerrari Aperta became the most expensive car sold at auction. The car was auctioned at RM Sothebys for €8,300,000 (approx. $9,980,000). There are four LaFerrari Aperta cars for sale on JamesEdtion with prices above US$4 million, and six other LaFerraris with prices starting from US$2.7 million."
                 ,"4733000", R.drawable.first_expensive,"0","0");
         myExpensiveList.add(mExpensiveData);
-        mExpensiveData = new ExpensiveData("", ""
+        mExpensiveData = new ExpensiveData("2017 Ferrari FXX-K2017 Ferrari FXX-K", "FXX-K was the brand’s first, limited-production, track day hybrid; the model is based on the LaFerrari, a street-legal hybrid sports car. The K in the car’s name refers to the kinetic energy recovery system (KERS) which is used to maximize performance. Like the previous FXX and 599XX, the cars are kept and maintained by Ferrari and are available to the owners on track day events."
                 ,"4170000", R.drawable.second_expensive,"1","0");
         myExpensiveList.add(mExpensiveData);
         mExpensiveData = new ExpensiveData("2003 Enzo", "The Enzo was designed by Ken Okuyama, Pininfarina’s head of design. Before production began, the limited run of 399 units was sold to customers who previously had bought the F40 and F50 models. With an initial price of US$659,330, one of the cars was later sold at a Sotheby’s auction for US$1.1 million. And now, in 2021, this iconic car is the third most expensive Ferrari in our stock."

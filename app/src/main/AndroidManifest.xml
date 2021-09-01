@@ -68,7 +68,11 @@
 
         <activity android:name=".activities.FavouriteCategoriesActivity" />
         <activity android:name=".activities.IntroActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".activities.FavouriteExpensiveActivity" />
         <activity android:name=".activities.FirstSplashScreenActivity" />
@@ -115,13 +119,7 @@
         <activity android:name=".activities.FactsDetailActivity" />
         <activity android:name=".activities.CompanyInfo" />
         <activity android:name=".activities.AboutUsActivity" />
-        <activity android:name=".blog.BlogActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".blog.BlogActivity" />
         <activity android:name=".blog.BlogDetailActivity" />
 
         <meta-data
