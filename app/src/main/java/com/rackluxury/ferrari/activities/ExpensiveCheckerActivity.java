@@ -178,6 +178,10 @@ public class ExpensiveCheckerActivity extends AppCompatActivity implements Purch
                         @Override
                         public void onClick(View view) {
                             alertDialog.dismiss();
+                            finish();
+                            Intent openExpensiveFromExpensiveChecker = new Intent(ExpensiveCheckerActivity.this, ExpensiveActivity.class);
+                            startActivity(openExpensiveFromExpensiveChecker);
+                            Animatoo.animateSwipeRight(ExpensiveCheckerActivity.this);
 
                         }
                     });
@@ -196,10 +200,7 @@ public class ExpensiveCheckerActivity extends AppCompatActivity implements Purch
                         @Override
                         public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
                             Toasty.success(ExpensiveCheckerActivity.this, "Purchase Successful", Toast.LENGTH_LONG).show();
-                            finish();
-                            Intent openExpensiveFromExpensiveChecker = new Intent(ExpensiveCheckerActivity.this, ExpensiveActivity.class);
-                            startActivity(openExpensiveFromExpensiveChecker);
-                            Animatoo.animateSwipeRight(ExpensiveCheckerActivity.this);
+
                         }
                     });
 
