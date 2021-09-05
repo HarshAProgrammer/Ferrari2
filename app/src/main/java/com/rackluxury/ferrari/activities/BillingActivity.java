@@ -44,7 +44,7 @@ public class BillingActivity extends AppCompatActivity implements PurchasesUpdat
     private Button buy_btn;
     private BillingClient billingClient;
     private final List<String> skulist = new ArrayList<>();
-    private final String categories = "buy_us_a_watch";
+    private final String categories = "buy_us_a_car";
 
     public static final int SWIPE_THRESHOLD = 100;
     public static final int SWIPE_VELOCITY_THRESHOLD = 100;
