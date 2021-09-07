@@ -78,8 +78,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     final List<CategoriesData> deletedCategories = new ArrayList<>();
     RecyclerView categoriesRecyclerView;
     List<CategoriesData> myCategoriesList;
-
-
     CategoriesData mCategoriesData;
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
@@ -127,9 +125,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView categoriesRecyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
 
             new RecyclerViewSwipeDecorator.Builder(HomeActivity.this, c, categoriesRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
-                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorDelete))
+                    .addSwipeLeftBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorRed))
                     .addSwipeLeftActionIcon(R.drawable.ic_deleted_swipe_main)
-                    .addSwipeRightBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorFavourite))
+                    .addSwipeRightBackgroundColor(ContextCompat.getColor(HomeActivity.this, R.color.colorGreen))
                     .addSwipeRightActionIcon(R.drawable.ic_favourite_swipe_main)
                     .setActionIconTint(ContextCompat.getColor(categoriesRecyclerView.getContext(), android.R.color.white))
                     .create()
@@ -322,9 +320,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.sort_home_name_z_to_a) {
             sortViewNameZtoA();
             return true;
-        } else if (item.getItemId() == R.id.home_videos) {
-            homeVideos();
-            return true;
         } else if (item.getItemId() == R.id.favourite_categories) {
             openCategoriesFav();
             return true;
@@ -339,9 +334,34 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void homeVideos() {
-        Intent openVideoFromMain = new Intent(HomeActivity.this, VideoActivity.class);
-        startActivity(openVideoFromMain);
-        Animatoo.animateSplit(HomeActivity.this);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
+        StorageReference storageReference = firebaseStorage.getReference();
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        storageReference.child(firebaseAuth.getUid()).child("Video Purchased").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                finish();
+                Intent openVideoFromMain = new Intent(HomeActivity.this, VideoActivity.class);
+                startActivity(openVideoFromMain);
+                Animatoo.animateSplit(HomeActivity.this);
+
+            }
+        });
+        storageReference.child(firebaseAuth.getUid()).child("Video Purchased").getDownloadUrl().addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                FirebaseMessaging.getInstance().subscribeToTopic("purchase_expensive");
+                finish();
+                Intent openVideoCheckerFromMain = new Intent(HomeActivity.this, VideoCheckerActivity.class);
+                startActivity(openVideoCheckerFromMain);
+                Animatoo.animateSwipeRight(HomeActivity.this);
+
+            }
+        });
+
 
     }
 
@@ -403,12 +423,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.expensiveNavigation) {
-            ExpensiveSportsCars();
+            ExpensiveWatches();
 
         } else if (id == R.id.imagesNavigation) {
             Images();
 
         } else if (id == R.id.videoNavigation) {
+            homeVideos();
+
+        } else if (id == R.id.youtubeVideoNavigation) {
             youtubeVideos();
 
         } else if (id == R.id.blogNavigation) {
@@ -459,8 +482,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
         StorageReference storageReference = firebaseStorage.getReference();
         firebaseDatabase = FirebaseDatabase.getInstance();
-
-
         storageReference.child(firebaseAuth.getUid()).child("Blog Purchased").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -484,21 +505,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         });
     }
+
     private void Reddit() {
         Intent openBlogFromMain = new Intent(HomeActivity.this, RedditMainActivity.class);
         startActivity(openBlogFromMain);
         Animatoo.animateSwipeRight(HomeActivity.this);
     }
 
-    private void ExpensiveSportsCars() {
-
+    private void ExpensiveWatches() {
 
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
         StorageReference storageReference = firebaseStorage.getReference();
         firebaseDatabase = FirebaseDatabase.getInstance();
-
-
         storageReference.child(firebaseAuth.getUid()).child("Expensive Purchased").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
