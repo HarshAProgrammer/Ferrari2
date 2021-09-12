@@ -46,8 +46,8 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:label">
         <activity
-            android:name=".VideoCheckerActivity"
-            android:exported="true" />
+            android:name=".activities.VideoCheckerActivity"
+            />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
