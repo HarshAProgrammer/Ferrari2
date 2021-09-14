@@ -5,7 +5,7 @@
     <string name="favourite">Favourite</string>
     <string name="footer">Footer</string>
     <string name="red_heart">Favourite</string>
-    <string name="ferrari_inc">Ferrari Inc.</string>
+    <string name="company_name">Ferrari Inc.</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
 
@@ -86,13 +86,13 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
     <string name="image_toolbar_home">Image Toolbar</string>
     <string name="sort">Sort</string>
     <string name="videos_home">Videos</string>
-    <string name="ferrari_categories_detail_image">Ferrari Detail Image</string>
-    <string name="ferrari_main_image">Ferrari Image</string>
-    <string name="ferrari_name">Ferrari Name</string>
-    <string name="ferrari_price">Ferrari Price</string>
-    <string name="ferrari_description">Ferrari Description</string>
-    <string name="ferrari_car_name_categories_detail">Ferrari Car Name</string>
-    <string name="ferrari_detail_categories_description">Ferrari Detail Description</string>
+    <string name="categories_detail_image">Ferrari Detail Image</string>
+    <string name="car_main_image">Ferrari Image</string>
+    <string name="car_name">Ferrari Name</string>
+    <string name="car_price">Ferrari Price</string>
+    <string name="car_description">Ferrari Description</string>
+    <string name="car_name_categories_detail">Ferrari Car Name</string>
+    <string name="detail_categories_description">Ferrari Detail Description</string>
     <string name="this_is_the_title_layout_video">This is the title</string>
     <string name="volume_on_off_layout_video">VolumeOnOff</string>
     <string name="thumbnail_layout_video">Thumbnail</string>
@@ -121,9 +121,9 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
     <string name="toolbar_expensive">Expensive Cars</string>
     <string name="toolbar_favourite_expensive">Favourites</string>
     <string name="toolbar_favourite_categories">Favourites</string>
-    <string name="ferrari_main_image_expensive">Ferrari Image</string>
+    <string name="main_image_expensive">Ferrari Image</string>
     <string name="name_detail_expensive_detail">Ferrari Car Name</string>
-    <string name="ferrari_detail_expensive_description">Ferrari Detail Description</string>
+    <string name="detail_expensive_description">Ferrari Detail Description</string>
 
 
     <string name="discover_expensive"><font fgcolor='#0084ff'>•</font> Discover the Most Expensive Sports cars from Ferrari</string>
