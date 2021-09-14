@@ -11,7 +11,7 @@ import android.widget.RemoteViews;
 
 import com.rackluxury.ferrari.R;
 
-public class FerrariAppWidgetProvider extends AppWidgetProvider {
+public class AppWidgetProvider extends android.appwidget.AppWidgetProvider {
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         for (int appWidgetId : appWidgetIds) {
