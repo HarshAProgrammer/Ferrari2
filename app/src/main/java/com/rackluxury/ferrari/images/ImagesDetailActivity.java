@@ -1,10 +1,10 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.images;
 
-import static com.rackluxury.ferrari.activities.ImagesActivity.EXTRA_COMMENTS;
-import static com.rackluxury.ferrari.activities.ImagesActivity.EXTRA_DOWNLOADS;
-import static com.rackluxury.ferrari.activities.ImagesActivity.EXTRA_LIKES;
-import static com.rackluxury.ferrari.activities.ImagesActivity.EXTRA_URL;
-import static com.rackluxury.ferrari.activities.ImagesActivity.EXTRA_VIEWS;
+import static com.rackluxury.ferrari.images.ImagesActivity.EXTRA_COMMENTS;
+import static com.rackluxury.ferrari.images.ImagesActivity.EXTRA_DOWNLOADS;
+import static com.rackluxury.ferrari.images.ImagesActivity.EXTRA_LIKES;
+import static com.rackluxury.ferrari.images.ImagesActivity.EXTRA_URL;
+import static com.rackluxury.ferrari.images.ImagesActivity.EXTRA_VIEWS;
 
 import android.Manifest;
 import android.app.WallpaperManager;

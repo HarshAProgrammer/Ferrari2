@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.adapters;
+package com.rackluxury.ferrari.images;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,6 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.rackluxury.ferrari.R;
-import com.rackluxury.ferrari.activities.ImageItem;
 import com.squareup.picasso.Picasso;
 
 

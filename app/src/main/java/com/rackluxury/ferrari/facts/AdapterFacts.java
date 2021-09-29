@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.facts;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.rackluxury.ferrari.R;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.rackluxury.ferrari.activities.Model;
 
 import java.util.List;
 

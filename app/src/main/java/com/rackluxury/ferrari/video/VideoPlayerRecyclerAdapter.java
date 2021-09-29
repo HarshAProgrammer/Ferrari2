@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.video;
 
 import android.os.Handler;
 import android.view.LayoutInflater;

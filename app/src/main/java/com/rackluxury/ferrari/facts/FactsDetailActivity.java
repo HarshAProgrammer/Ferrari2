@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.facts;
 
 import android.Manifest;
 import android.app.WallpaperManager;

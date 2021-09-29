@@ -61,7 +61,10 @@ import com.rackluxury.ferrari.adapters.CategoriesData;
 import com.rackluxury.ferrari.adapters.MyCategoriesAdapter;
 import com.rackluxury.ferrari.adapters.UserProfile;
 import com.rackluxury.ferrari.blog.BlogActivity;
+import com.rackluxury.ferrari.facts.FactsActivity;
+import com.rackluxury.ferrari.images.ImagesActivity;
 import com.rackluxury.ferrari.reddit.activities.RedditMainActivity;
+import com.rackluxury.ferrari.video.VideoActivity;
 import com.rackluxury.ferrari.youtube.YouTubeActivity;
 import com.squareup.picasso.Picasso;
 

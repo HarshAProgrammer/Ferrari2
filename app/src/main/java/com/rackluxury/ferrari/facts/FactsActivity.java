@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.facts;
 
 import android.animation.ArgbEvaluator;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.rackluxury.ferrari.R;
+import com.rackluxury.ferrari.activities.Model;
 
 import java.util.ArrayList;
 import java.util.List;

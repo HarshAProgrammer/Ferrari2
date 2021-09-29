@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.video;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +18,7 @@ import android.widget.ImageView;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.rackluxury.ferrari.R;
+import com.rackluxury.ferrari.activities.NoInternetDialogue;
 import com.rackluxury.ferrari.activities.models.MediaObject;
 import com.rackluxury.ferrari.activities.util.Resources;
 import com.rackluxury.ferrari.activities.util.VerticalSpacingItemDecorator;

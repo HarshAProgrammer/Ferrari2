@@ -1,4 +1,4 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.video;
 
 import android.content.Context;
 import android.graphics.Point;
