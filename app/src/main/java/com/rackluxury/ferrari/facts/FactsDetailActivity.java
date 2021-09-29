@@ -12,6 +12,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
+import android.text.method.ScrollingMovementMethod;
+
 import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Build;
@@ -114,7 +116,6 @@ public class FactsDetailActivity extends AppCompatActivity implements
         love = findViewById(R.id.ivFacDetailReactLove);
         sad = findViewById(R.id.ivFacDetailReactSad);
         shocked = findViewById(R.id.ivFacDetailReactShocked);
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             AudioAttributes audioAttributes = new AudioAttributes.Builder()
