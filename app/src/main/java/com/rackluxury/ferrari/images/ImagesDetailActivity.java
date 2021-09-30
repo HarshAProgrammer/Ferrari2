@@ -81,6 +81,7 @@ public class ImagesDetailActivity extends AppCompatActivity {
     private ImageView shocked;
     private ImageView sad;
     private ImageView happy;
+    import es.dmoral.toasty.Toasty;
 
 
     @Override
@@ -133,7 +134,14 @@ public class ImagesDetailActivity extends AppCompatActivity {
             }
         });
 
+        optionsIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Toasty.info(ImagesDetailActivity.this, "Hold Long for Options", Toast.LENGTH_LONG).show();
+
+            }
+        });
         happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
