@@ -18,6 +18,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+    <RelativeLayout
+        android:id="@+id/rlGreetHome"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/ivGreetHome"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvGreetHome"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#006468"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,8 +68,7 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/fabFavCategories"
             app:layout_constraintEnd_toEndOf="@+id/fabFavCategories"
-            app:srcCompat="@drawable/ic_video"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/ic_video" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabFavCategories"
@@ -60,8 +85,7 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/fabMoreCategories"
             app:layout_constraintEnd_toEndOf="@+id/fabMoreCategories"
-            app:srcCompat="@drawable/ic_heart_white"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/ic_heart_white" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabMoreCategories"
@@ -78,8 +102,7 @@
             app:pressedTranslationZ="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_add"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/ic_add" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
