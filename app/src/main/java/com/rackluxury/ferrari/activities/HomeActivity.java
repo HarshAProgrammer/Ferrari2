@@ -58,19 +58,16 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import android.widget.RelativeLayout;
 
 import com.rackluxury.ferrari.R;
 import com.rackluxury.ferrari.adapters.CategoriesData;
 import com.rackluxury.ferrari.adapters.MyCategoriesAdapter;
 import com.rackluxury.ferrari.adapters.UserProfile;
 import com.rackluxury.ferrari.blog.BlogActivity;
-import com.rackluxury.ferrari.blog.BlogCheckerActivity;
 import com.rackluxury.ferrari.facts.FactsActivity;
 import com.rackluxury.ferrari.images.ImagesActivity;
 import com.rackluxury.ferrari.reddit.activities.RedditMainActivity;
 import com.rackluxury.ferrari.video.VideoActivity;
-import com.rackluxury.ferrari.video.VideoCheckerActivity;
 import com.rackluxury.ferrari.youtube.YouTubeActivity;
 import com.squareup.picasso.Picasso;
 
