@@ -1,6 +1,6 @@
-package com.rackluxury.ferrari.activities;
+package com.rackluxury.ferrari.video;
 
-import static com.rackluxury.rolex.activities.ExpensiveNotificationApp.FCM_CHANNEL_ID;
+import static com.rackluxury.rolex.video.VideoNotificationApp.FCM_CHANNEL_ID;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -18,14 +18,14 @@ import com.google.firebase.messaging.RemoteMessage;
 import com.rackluxury.rolex.R;
 
 
-public class ExpensiveNotificationService extends FirebaseMessagingService {
+public class VideoNotificationService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
 
-        BitmapDrawable drawable = (BitmapDrawable) ContextCompat.getDrawable(getApplicationContext(), R.drawable.img_expensive_checker);
+        BitmapDrawable drawable = (BitmapDrawable) ContextCompat.getDrawable(getApplicationContext(), R.drawable.img_video_checker);
         Bitmap bitmap = drawable.getBitmap();
 
 
@@ -34,7 +34,7 @@ public class ExpensiveNotificationService extends FirebaseMessagingService {
             String body = remoteMessage.getNotification().getBody();
 
 
-            Intent resultIntent = new Intent(this, ExpensiveCheckerActivity.class);
+            Intent resultIntent = new Intent(this, VideoCheckerActivity.class);
             PendingIntent resultPendingIntent = PendingIntent.getActivity(this, 1,resultIntent,PendingIntent.FLAG_UPDATE_CURRENT);
 
             Notification notification = new NotificationCompat.Builder(this, FCM_CHANNEL_ID)
