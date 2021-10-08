@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/drawable-anydpi/ic_person.xml" value="0.30185185185185187" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/drawable/back.xml" value="0.1" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/drawable/ic_buy_main.xml" value="0.30185185185185187" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout-land/activity_about_us.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout-land/activity_blog_checker.xml" value="0.31040564373897706" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_company_info.xml" value="0.20625" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_customize_theme.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_daily_login.xml" value="0.1068840579710145" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_facts_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_login_or_register.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/CarsfromFerrari/app/src/main/res/layout/activity_maps.xml" value="0.20677083333333332" />
