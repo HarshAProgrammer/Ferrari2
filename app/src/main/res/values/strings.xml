@@ -1359,18 +1359,18 @@ This success has contributed to the brand’s wider prosperity in several ways. 
     <string name="reddit_signup">SignUp</string>
     <string name="youtube_videos_nav_home">Youtube Videos</string>
 
-    <string name="advantageBlog"><font fgcolor='#0084ff'>•</font> Read the best Blogs written on Rolex from Top Notch Editors and get 100,000(80,000+20,000) coins.</string>
-    <string name="advantageVideo"><font fgcolor='#0084ff'>•</font> Watch the best Showcase Videos of Rolex Watches and get 100,000(80,000+20,000) coins.</string>
-    <string name="advantageExpensive"><font fgcolor='#0084ff'>•</font> Discover the Most Expensive Watches from Rolex and get 100,000(80,000+20,000) coins.</string>
+    <string name="advantageBlog"><font fgcolor='#0084ff'>•</font> Read the best Blogs written on Ferrari from Top Notch Editors and get 100,000 coins.</string>
+    <string name="advantageVideo"><font fgcolor='#0084ff'>•</font> Watch the best Showcase Videos of Ferrari Cars and get 100,000 coins.</string>
+    <string name="advantageExpensive"><font fgcolor='#0084ff'>•</font> Discover the Most Expensive Cars from Ferrari and get 100,000 coins.</string>
     <string name="purchase_information_description">This item is can only be purchased by first 100 Users.</string>
-    <string name="purchase_information_timer">Get this product at a discount price of $352 instead of $999 and an additional 20,000 coins before this timer runs out.</string>
+    <string name="purchase_information_timer">Get enrolled to our Exclusive Waiting List.</string>
     <string name="checker_people_description">Users currently looking at this Product</string>
     <string name="checker_purchase_description">Users remaining who can purchase</string>
     <string name="loginorregisterInformation">Swipe Right to Login \n Swipe Left to Register</string>
     <string name="redeem_image_redeems">Redeem Image</string>
     <string name="title_redeems">Redeem Title</string>
     <string name="redeem_price_redeems">Redeem Price</string>
-    <string name="loginOrRegister_welcome_txt">Welcome to Rolex,\nThe world\'s most prestigious and versatile Watch Company.\nFor those who demand only the best of what life has to offer.</string>
+    <string name="loginOrRegister_welcome_txt">Welcome to Ferrari,\nThe world\'s most prestigious and versatile Sports Car Company.\nFor those who demand only the best of what life has to offer.</string>
 
 
 </resources>

@@ -274,15 +274,15 @@ public class RedeemActivity extends AppCompatActivity {
     }
     private void redeemChoice() {
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.redeem_1, "1955 Ferrari 750 Monza", "$ 5 350 000"));
-        models.add(new Model(R.drawable.redeem_2, "2016 Ferrari LaFerrari - UK Supplied", "$ 4 769 810"));
-        models.add(new Model(R.drawable.redeem_3, "1958 Ferrari 250", "$ 4 350 000"));
-        models.add(new Model(R.drawable.redeem_4, "2016 Ferrari J50", "$ 3 757 330"));
-        models.add(new Model(R.drawable.redeem_5, "1958 Ferrari 250", "$ 3 750 000"));
-        models.add(new Model(R.drawable.redeem_6, "1954 Ferrari 500 Mondial", "$ 3 250 000"));
-        models.add(new Model(R.drawable.redeem_7, "2016 Ferrari LaFerrari", "$ 2 991 395"));
-        models.add(new Model(R.drawable.redeem_8, "2014 Ferrari LaFerrari", "$ 2 991 395"));
-        models.add(new Model(R.drawable.redeem_9, "1960 Ferrari 250 - GT Cabriolet", "$ 2 453 080"));
+        models.add(new Model(R.drawable.redeem_01, "1955 Ferrari 750 Monza", "$ 5 350 000"));
+        models.add(new Model(R.drawable.redeem_02, "2016 Ferrari LaFerrari - UK Supplied", "$ 4 769 810"));
+        models.add(new Model(R.drawable.redeem_03, "1958 Ferrari 250", "$ 4 350 000"));
+        models.add(new Model(R.drawable.redeem_04, "2016 Ferrari J50", "$ 3 757 330"));
+        models.add(new Model(R.drawable.redeem_05, "1958 Ferrari 250", "$ 3 750 000"));
+        models.add(new Model(R.drawable.redeem_06, "1954 Ferrari 500 Mondial", "$ 3 250 000"));
+        models.add(new Model(R.drawable.redeem_07, "2016 Ferrari LaFerrari", "$ 2 991 395"));
+        models.add(new Model(R.drawable.redeem_08, "2014 Ferrari LaFerrari", "$ 2 991 395"));
+        models.add(new Model(R.drawable.redeem_09, "1960 Ferrari 250 - GT Cabriolet", "$ 2 453 080"));
         models.add(new Model(R.drawable.redeem_10, "1967 Ferrari 330", "$ 2 450 000"));
         models.add(new Model(R.drawable.redeem_11, "2020 Ferrari Monza - SP2", "$ 2 410 664"));
         models.add(new Model(R.drawable.redeem_12, "1963 Ferrari 250 - GT Berlinetta Lusso", "$ 2 254 798"));
