@@ -274,28 +274,20 @@ public class RedeemActivity extends AppCompatActivity {
     }
     private void redeemChoice() {
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.redeem_1, "Daytona,116576TBR-0003 ", "$279,950"));
-        models.add(new Model(R.drawable.redeem_2, "Submariner,116659SABR-0001", "$147,950"));
-        models.add(new Model(R.drawable.redeem_3, "Submariner,116659SABR", "$144,940"));
-        models.add(new Model(R.drawable.redeem_4, "Daytona,116506-0001", "$114,950"));
-        models.add(new Model(R.drawable.redeem_5, "GMT-Master II,116759SANR", "$92,950"));
-        models.add(new Model(R.drawable.redeem_6, "GMT-Master II,116758SANR", "$89,950"));
-        models.add(new Model(R.drawable.redeem_7, "Daytona,116508-0013", "$86,950"));
-        models.add(new Model(R.drawable.redeem_8, "Daytona,116508-0013", "$86,950"));
-        models.add(new Model(R.drawable.redeem_9, "Daytona,116508-0013", "$85,950"));
-        models.add(new Model(R.drawable.redeem_10, "Daytona,116599RBR", "$84,940"));
-        models.add(new Model(R.drawable.redeem_11, "Datejust,86349SAFUBL", "$83,940"));
-        models.add(new Model(R.drawable.redeem_12, "Day-Date,18956BR", "$83,940"));
-        models.add(new Model(R.drawable.redeem_13, "GMT-Master II,126719BLRO-0002", "$69,950"));
-        models.add(new Model(R.drawable.redeem_14, "Sea-Dweller,1665", "$69,950"));
-        models.add(new Model(R.drawable.redeem_15, "Day-Date,218349", "$69,940"));
-        models.add(new Model(R.drawable.redeem_16, "Day-Date,18946-0018", "$57,950"));
-        models.add(new Model(R.drawable.redeem_17, "Daytona,116509-0071", "$56,950"));
-        models.add(new Model(R.drawable.redeem_18, "Sky-Dweller,326938-0003", "$56,950"));
-        models.add(new Model(R.drawable.redeem_19, "Daytona,116509-0071", "$56,450"));
-        models.add(new Model(R.drawable.redeem_20, "Submariner,5513", "$59,940"));
-        models.add(new Model(R.drawable.redeem_21, "GMT-Master II,116718LN-0002", "$54,950"));
-        models.add(new Model(R.drawable.redeem_22, "Sky-Dweller,326938-0003", "$54,940"));
+        models.add(new Model(R.drawable.redeem_1, "1955 Ferrari 750 Monza", "$ 5 350 000"));
+        models.add(new Model(R.drawable.redeem_2, "2016 Ferrari LaFerrari - UK Supplied", "$ 4 769 810"));
+        models.add(new Model(R.drawable.redeem_3, "1958 Ferrari 250", "$ 4 350 000"));
+        models.add(new Model(R.drawable.redeem_4, "2016 Ferrari J50", "$ 3 757 330"));
+        models.add(new Model(R.drawable.redeem_5, "1958 Ferrari 250", "$ 3 750 000"));
+        models.add(new Model(R.drawable.redeem_6, "1954 Ferrari 500 Mondial", "$ 3 250 000"));
+        models.add(new Model(R.drawable.redeem_7, "2016 Ferrari LaFerrari", "$ 2 991 395"));
+        models.add(new Model(R.drawable.redeem_8, "2014 Ferrari LaFerrari", "$ 2 991 395"));
+        models.add(new Model(R.drawable.redeem_9, "1960 Ferrari 250 - GT Cabriolet", "$ 2 453 080"));
+        models.add(new Model(R.drawable.redeem_10, "1967 Ferrari 330", "$ 2 450 000"));
+        models.add(new Model(R.drawable.redeem_11, "2020 Ferrari Monza - SP2", "$ 2 410 664"));
+        models.add(new Model(R.drawable.redeem_12, "1963 Ferrari 250 - GT Berlinetta Lusso", "$ 2 254 798"));
+
+
 
 
         adapterRedeem = new com.rackluxury.ferrari.activities.AdapterRedeem(models, this);
@@ -305,28 +297,18 @@ public class RedeemActivity extends AppCompatActivity {
         viewPagerRedeem.setPadding(130, 0, 130, 0);
 
         colors = new Integer[]{
-                getResources().getColor(R.color.colorRedeem1),
-                getResources().getColor(R.color.colorRedeem2),
-                getResources().getColor(R.color.colorRedeem3),
-                getResources().getColor(R.color.colorRedeem4),
-                getResources().getColor(R.color.colorRedeem5),
-                getResources().getColor(R.color.colorRedeem6),
-                getResources().getColor(R.color.colorRedeem7),
-                getResources().getColor(R.color.colorRedeem8),
-                getResources().getColor(R.color.colorRedeem9),
+                getResources().getColor(R.color.colorRedeem01),
+                getResources().getColor(R.color.colorRedeem02),
+                getResources().getColor(R.color.colorRedeem03),
+                getResources().getColor(R.color.colorRedeem04),
+                getResources().getColor(R.color.colorRedeem05),
+                getResources().getColor(R.color.colorRedeem06),
+                getResources().getColor(R.color.colorRedeem07),
+                getResources().getColor(R.color.colorRedeem08),
+                getResources().getColor(R.color.colorRedeem09),
                 getResources().getColor(R.color.colorRedeem10),
                 getResources().getColor(R.color.colorRedeem11),
-                getResources().getColor(R.color.colorRedeem12),
-                getResources().getColor(R.color.colorRedeem13),
-                getResources().getColor(R.color.colorRedeem14),
-                getResources().getColor(R.color.colorRedeem15),
-                getResources().getColor(R.color.colorRedeem16),
-                getResources().getColor(R.color.colorRedeem17),
-                getResources().getColor(R.color.colorRedeem18),
-                getResources().getColor(R.color.colorRedeem19),
-                getResources().getColor(R.color.colorRedeem20),
-                getResources().getColor(R.color.colorRedeem21),
-                getResources().getColor(R.color.colorRedeem22)
+                getResources().getColor(R.color.colorRedeem12)
 
         };
 

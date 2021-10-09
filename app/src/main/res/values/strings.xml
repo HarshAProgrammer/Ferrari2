@@ -84,7 +84,6 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
     <string name="videos_toolbar_home">Videos</string>
     <string name="image_toolbar_home">Image Toolbar</string>
     <string name="sort">Sort</string>
-    <string name="videos_home">Videos</string>
     <string name="categories_detail_image">Ferrari Detail Image</string>
     <string name="car_main_image">Ferrari Image</string>
     <string name="car_name">Ferrari Name</string>
@@ -123,9 +122,6 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Ferrari] app as a Commerc
     <string name="main_image_expensive">Ferrari Image</string>
     <string name="name_detail_expensive_detail">Ferrari Car Name</string>
     <string name="detail_expensive_description">Ferrari Detail Description</string>
-
-
-    <string name="discover_expensive"><font fgcolor='#0084ff'>•</font> Discover the Most Expensive Sports cars from Ferrari</string>
 
 
     <string name="images_toolbar_images">Images</string>
@@ -1361,8 +1357,6 @@ This success has contributed to the brand’s wider prosperity in several ways. 
     <string name="error_fetch_trending_search">Fetch trending searches failed.\nTap to retry.</string>
     <string name="error_parse_trending_search">Parse trending searches failed.\nTap to retry.</string>
     <string name="reddit_signup">SignUp</string>
-    <string name="discover_blogs">Read the best Blogs written on Ferrari from Top Notch Editors.</string>
-    <string name="discover_video">Watch best showcase videos from Cars from Ferrari</string>
     <string name="youtube_videos_nav_home">Youtube Videos</string>
 
     <string name="advantageBlog"><font fgcolor='#0084ff'>•</font> Read the best Blogs written on Rolex from Top Notch Editors and get 100,000(80,000+20,000) coins.</string>
