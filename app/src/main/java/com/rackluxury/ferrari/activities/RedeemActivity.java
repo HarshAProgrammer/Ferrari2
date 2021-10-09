@@ -98,6 +98,8 @@ public class RedeemActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(RedeemActivity.this, com.rackluxury.ferrari.activities.BuyCoinsActivity.class);
                         startActivity(intent);
+                Animatoo.animateSwipeLeft(RedeemActivity.this);
+
             }
         });
 
