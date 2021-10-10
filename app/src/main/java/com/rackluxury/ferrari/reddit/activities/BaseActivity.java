@@ -299,7 +299,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     @SuppressLint("RestrictedApi")
-    protected boolean applyMenuItemTheme(Menu menu) {
+    protected void applyMenuItemTheme(Menu menu) {
         if (customThemeWrapper != null) {
             int size = Math.min(menu.size(), 2);
             for (int i = 0; i < size; i++) {
@@ -313,7 +313,6 @@ public abstract class BaseActivity extends AppCompatActivity {
                 }
             }
         }
-        return true;
     }
 
     protected void applyTabLayoutTheme(TabLayout tabLayout) {

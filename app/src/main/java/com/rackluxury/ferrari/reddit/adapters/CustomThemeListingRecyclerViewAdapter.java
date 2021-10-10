@@ -122,7 +122,7 @@ public class CustomThemeListingRecyclerViewAdapter extends RecyclerView.Adapter<
         notifyDataSetChanged();
     }
 
-    class PredefinedCustomThemeViewHolder extends RecyclerView.ViewHolder {
+    static class PredefinedCustomThemeViewHolder extends RecyclerView.ViewHolder {
 
         @BindView(R.id.color_primary_item_predefined_custom_theme)
         View colorPrimaryView;
@@ -137,7 +137,7 @@ public class CustomThemeListingRecyclerViewAdapter extends RecyclerView.Adapter<
         }
     }
 
-    class UserCustomThemeViewHolder extends RecyclerView.ViewHolder {
+    static class UserCustomThemeViewHolder extends RecyclerView.ViewHolder {
 
         @BindView(R.id.color_primary_item_user_custom_theme)
         View colorPrimaryView;
@@ -154,14 +154,14 @@ public class CustomThemeListingRecyclerViewAdapter extends RecyclerView.Adapter<
         }
     }
 
-    class PreDefinedThemeDividerViewHolder extends RecyclerView.ViewHolder {
+    static class PreDefinedThemeDividerViewHolder extends RecyclerView.ViewHolder {
 
         PreDefinedThemeDividerViewHolder(@NonNull View itemView) {
             super(itemView);
         }
     }
 
-    class UserThemeDividerViewHolder extends RecyclerView.ViewHolder {
+    static class UserThemeDividerViewHolder extends RecyclerView.ViewHolder {
 
         UserThemeDividerViewHolder(@NonNull View itemView) {
             super(itemView);

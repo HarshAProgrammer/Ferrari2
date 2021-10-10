@@ -482,7 +482,7 @@ public class PostRecyclerViewAdapter extends PagedListAdapter<Post, RecyclerView
             Post post = getItem(position);
             if (post != null) {
                 if (post.isRead()) {
-                    if ((mHideReadPostsAutomatically && !post.isHiddenManuallyByUser()) || position < mHideReadPostsIndex) {
+                    if ((mHideReadPostsAutomatically && post.isHiddenManuallyByUser()) || position < mHideReadPostsIndex) {
                         post.hidePostInRecyclerView();
                         holder.itemView.setVisibility(View.GONE);
                         RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) holder.itemView.getLayoutParams();
@@ -986,7 +986,7 @@ public class PostRecyclerViewAdapter extends PagedListAdapter<Post, RecyclerView
             Post post = getItem(position);
             if (post != null) {
                 if (post.isRead()) {
-                    if ((mHideReadPostsAutomatically && !post.isHiddenManuallyByUser()) || position < mHideReadPostsIndex) {
+                    if ((mHideReadPostsAutomatically && post.isHiddenManuallyByUser()) || position < mHideReadPostsIndex) {
                         post.hidePostInRecyclerView();
                         holder.itemView.setVisibility(View.GONE);
                         ViewGroup.LayoutParams params = holder.itemView.getLayoutParams();
@@ -1318,7 +1318,7 @@ public class PostRecyclerViewAdapter extends PagedListAdapter<Post, RecyclerView
             Post post = getItem(position);
             if (post != null) {
                 if (post.isRead()) {
-                    if ((mHideReadPostsAutomatically && !post.isHiddenManuallyByUser()) || position < mHideReadPostsIndex) {
+                    if ((mHideReadPostsAutomatically && post.isHiddenManuallyByUser()) || position < mHideReadPostsIndex) {
                         post.hidePostInRecyclerView();
                         holder.itemView.setVisibility(View.GONE);
                         RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) holder.itemView.getLayoutParams();

@@ -59,8 +59,6 @@ public class BuyCoinsActivity extends AppCompatActivity implements PurchasesUpda
     public static final int SWIPE_VELOCITY_THRESHOLD = 100;
     private GestureDetector gestureDetector;
     private SharedPreferences coins;
-    private String currentCoins;
-
 
 
     @Override
@@ -197,6 +195,7 @@ public class BuyCoinsActivity extends AppCompatActivity implements PurchasesUpda
     private void handlePurchase(Purchase purchase) {
         try {
             if (purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
+                String currentCoins;
                 if (purchase.getSku().equals(coins_gold)) {
                     ConsumeParams consumeParams = ConsumeParams.newBuilder()
                             .setPurchaseToken(purchase.getPurchaseToken())

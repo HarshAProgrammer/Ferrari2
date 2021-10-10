@@ -785,7 +785,6 @@ public class ViewPostDetailFragment extends Fragment implements FragmentCommunic
                         }
                     }
 
-                    return;
                 } else {
                     for (int i = currentSearchIndex - 1; i >= 0; i--) {
                         if (visibleComments.get(i).getCommentRawText() !=null &&
@@ -803,8 +802,8 @@ public class ViewPostDetailFragment extends Fragment implements FragmentCommunic
                         }
                     }
 
-                    return;
                 }
+                return;
             }
         }
     }
@@ -1113,7 +1112,7 @@ public class ViewPostDetailFragment extends Fragment implements FragmentCommunic
     }
 
     @SuppressLint("RestrictedApi")
-    protected boolean applyMenuItemTheme(Menu menu) {
+    protected void applyMenuItemTheme(Menu menu) {
         if (mCustomThemeWrapper != null) {
             int size = Math.min(menu.size(), 2);
             for (int i = 0; i < size; i++) {
@@ -1127,7 +1126,6 @@ public class ViewPostDetailFragment extends Fragment implements FragmentCommunic
                 }
             }
         }
-        return true;
     }
 
     private void fetchPostAndCommentsById(String subredditId) {

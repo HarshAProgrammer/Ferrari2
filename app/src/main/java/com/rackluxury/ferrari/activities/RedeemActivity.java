@@ -40,13 +40,10 @@ import es.dmoral.toasty.Toasty;
 
 public class RedeemActivity extends AppCompatActivity {
     private TextView coinsAvailable;
-    private FirebaseAuth firebaseAuth;
-    private FirebaseAuth mAuth;
-    private DatabaseReference mRef, mRefStatus;
+    private DatabaseReference mRefStatus;
 
     private int usercoin;
     private float x;
-    private Integer integer;
     private StorageReference storageReference;
     private float usermoney;
     private int usermoneyCoins, usercoins;
@@ -66,7 +63,7 @@ public class RedeemActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_redeem);
-        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         if (imm.isAcceptingText()) {
@@ -107,10 +104,10 @@ public class RedeemActivity extends AppCompatActivity {
         coinsAvailable = findViewById(R.id.tvCoinsRedeem);
         final Handler handler = new Handler();
         FirebaseDatabase database11 = FirebaseDatabase.getInstance();
-        mAuth = FirebaseAuth.getInstance();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
         FirebaseUser user11 = mAuth.getCurrentUser();
         String userId11 = user11.getUid();
-        mRef = database11.getReference().child(userId11);
+        DatabaseReference mRef = database11.getReference().child(userId11);
         mRef.child("RedeemCoins").removeValue();
         mRef.child("RedeemUSD").removeValue();
         mRef.child("Coins").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -125,7 +122,7 @@ public class RedeemActivity extends AppCompatActivity {
             }
         });
 
-        integer = Integer.valueOf(coinsAvailable.getText().toString());
+        Integer integer = Integer.valueOf(coinsAvailable.getText().toString());
         FirebaseDatabase database22 = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user22 = mAuth.getCurrentUser();

@@ -16,7 +16,6 @@ import android.graphics.Color;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import es.dmoral.toasty.Toasty;
 
 import android.media.AudioAttributes;
 import android.media.AudioManager;

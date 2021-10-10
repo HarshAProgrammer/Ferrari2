@@ -15,7 +15,7 @@ public class CheckIsSubscribedToSubreddit {
                                                     CheckIsSubscribedToSubredditListener checkIsSubscribedToSubredditListener) {
         executor.execute(() -> {
             if (accountName == null) {
-                if (!redditDataRoomDatabase.accountDao().isAnonymousAccountInserted()) {
+                if (redditDataRoomDatabase.accountDao().isAnonymousAccountInserted()) {
                     redditDataRoomDatabase.accountDao().insert(Account.getAnonymousAccount());
                 }
             }

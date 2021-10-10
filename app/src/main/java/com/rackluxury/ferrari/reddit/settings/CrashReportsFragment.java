@@ -72,7 +72,7 @@ public class CrashReportsFragment extends Fragment {
     }
 
     @SuppressLint("RestrictedApi")
-    protected boolean applyMenuItemTheme(Menu menu) {
+    protected void applyMenuItemTheme(Menu menu) {
         if (mCustomThemeWrapper != null) {
             int size = Math.min(menu.size(), 2);
             for (int i = 0; i < size; i++) {
@@ -86,7 +86,6 @@ public class CrashReportsFragment extends Fragment {
                 }
             }
         }
-        return true;
     }
 
     @Override

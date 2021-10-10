@@ -1518,9 +1518,8 @@ public class CommentsRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerVi
             commentMarkdownView.setHighlightColor(Color.TRANSPARENT);
         }
 
-        private boolean expandComments() {
+        private void expandComments() {
             expandButton.performClick();
-            return true;
         }
 
         private boolean hideToolbar() {

@@ -25,10 +25,7 @@ import es.dmoral.toasty.Toasty;
 
 public class DailyLoginActivity extends AppCompatActivity {
 
-    private Calendar calendar;
-    private int weekday;
     private SharedPreferences coins;
-    private Button sun, mon, tue, wed, thu, fri, sat;
     private String todayString;
     private String currentCoins;
 
@@ -50,19 +47,19 @@ public class DailyLoginActivity extends AppCompatActivity {
             }
         });
         coins = getSharedPreferences("Rewards", MODE_PRIVATE);
-        calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
-        weekday = calendar.get(Calendar.DAY_OF_WEEK);
+        int weekday = calendar.get(Calendar.DAY_OF_WEEK);
         todayString = year + "" + month + "" + day;
-        sun = findViewById(R.id.btSun);
-        mon = findViewById(R.id.btMon);
-        tue = findViewById(R.id.btTue);
-        wed = findViewById(R.id.btWed);
-        thu = findViewById(R.id.btThu);
-        fri = findViewById(R.id.btFri);
-        sat = findViewById(R.id.btSat);
+        Button sun = findViewById(R.id.btSun);
+        Button mon = findViewById(R.id.btMon);
+        Button tue = findViewById(R.id.btTue);
+        Button wed = findViewById(R.id.btWed);
+        Button thu = findViewById(R.id.btThu);
+        Button fri = findViewById(R.id.btFri);
+        Button sat = findViewById(R.id.btSat);
         sun.setEnabled(false);
         mon.setEnabled(false);
         tue.setEnabled(false);

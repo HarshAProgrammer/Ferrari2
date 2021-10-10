@@ -169,8 +169,7 @@ public class IntroActivity extends AppCompatActivity {
 
     private boolean restorePrefData() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs", MODE_PRIVATE);
-        Boolean isIntroActivityOpenedBefore = pref.getBoolean("isIntroOpened", false);
-        return isIntroActivityOpenedBefore;
+        return pref.getBoolean("isIntroOpened", false);
     }
 
     private void savePrefsData() {

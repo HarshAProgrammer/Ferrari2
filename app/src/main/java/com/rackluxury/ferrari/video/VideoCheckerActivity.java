@@ -55,9 +55,6 @@ public class VideoCheckerActivity extends AppCompatActivity implements Purchases
     private FirebaseAuth firebaseAuth;
     private StorageReference storageReference;
     private SharedPreferences prefs;
-    private TextView people;
-    private TextView purchasesRemaining;
-
 
 
     private BillingClient billingClient;
@@ -71,8 +68,8 @@ public class VideoCheckerActivity extends AppCompatActivity implements Purchases
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_checker);
-        people = findViewById(R.id.peopleNumVideoChecker);
-        purchasesRemaining = findViewById(R.id.purchaseNumVideoChecker);
+        TextView people = findViewById(R.id.peopleNumVideoChecker);
+        TextView purchasesRemaining = findViewById(R.id.purchaseNumVideoChecker);
 
         Random randomPurchase = new Random();
         int valPurc = randomPurchase.nextInt(10);

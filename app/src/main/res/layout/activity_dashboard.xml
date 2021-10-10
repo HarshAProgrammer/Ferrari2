@@ -540,7 +540,8 @@
         android:background="#E6000000"
         android:clickable="true"
         android:onClick="Disappear"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:focusable="true">
 
         <RelativeLayout
             android:layout_width="match_parent"

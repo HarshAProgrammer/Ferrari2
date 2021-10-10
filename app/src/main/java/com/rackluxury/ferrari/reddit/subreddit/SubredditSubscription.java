@@ -129,7 +129,7 @@ public class SubredditSubscription {
             SubscribedSubredditData subscribedSubredditData = new SubscribedSubredditData(subredditData.getId(), subredditData.getName(),
                     subredditData.getIconUrl(), accountName, false);
             if (accountName.equals("-")) {
-                if (!redditDataRoomDatabase.accountDao().isAnonymousAccountInserted()) {
+                if (redditDataRoomDatabase.accountDao().isAnonymousAccountInserted()) {
                     redditDataRoomDatabase.accountDao().insert(Account.getAnonymousAccount());
                 }
             }
@@ -144,7 +144,7 @@ public class SubredditSubscription {
                                            SubredditSubscriptionListener subredditSubscriptionListener) {
         executor.execute(() -> {
             if (accountName.equals("-")) {
-                if (!redditDataRoomDatabase.accountDao().isAnonymousAccountInserted()) {
+                if (redditDataRoomDatabase.accountDao().isAnonymousAccountInserted()) {
                     redditDataRoomDatabase.accountDao().insert(Account.getAnonymousAccount());
                 }
             }

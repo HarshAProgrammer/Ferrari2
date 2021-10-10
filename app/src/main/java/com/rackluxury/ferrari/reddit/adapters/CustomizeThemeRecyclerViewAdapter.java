@@ -135,7 +135,7 @@ public class CustomizeThemeRecyclerViewAdapter extends RecyclerView.Adapter<Recy
         return themeName;
     }
 
-    class ThemeColorItemViewHolder extends RecyclerView.ViewHolder {
+    static class ThemeColorItemViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.color_image_view_item_custom_theme_color_item)
         View colorImageView;
         @BindView(R.id.theme_item_name_text_view_item_custom_theme_color_item)
@@ -149,7 +149,7 @@ public class CustomizeThemeRecyclerViewAdapter extends RecyclerView.Adapter<Recy
         }
     }
 
-    class ThemeSwitchItemViewHolder extends RecyclerView.ViewHolder {
+    static class ThemeSwitchItemViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.theme_item_name_text_view_item_custom_theme_switch_item)
         TextView themeItemNameTextView;
         @BindView(R.id.theme_item_info_text_view_item_custom_theme_switch_item)
@@ -163,7 +163,7 @@ public class CustomizeThemeRecyclerViewAdapter extends RecyclerView.Adapter<Recy
         }
     }
 
-    class ThemeNameItemViewHolder extends RecyclerView.ViewHolder {
+    static class ThemeNameItemViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.theme_name_text_view_item_theme_name)
         TextView themeNameTextView;
         @BindView(R.id.description_text_view_item_theme_name)

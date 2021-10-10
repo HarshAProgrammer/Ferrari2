@@ -54,8 +54,6 @@ public class ExpensiveCheckerActivity extends AppCompatActivity implements Purch
     private FirebaseAuth firebaseAuth;
     private StorageReference storageReference;
     private SharedPreferences prefs;
-    private TextView people;
-    private TextView purchasesRemaining;
     private SharedPreferences coins;
 
     private BillingClient billingClient;
@@ -69,8 +67,8 @@ public class ExpensiveCheckerActivity extends AppCompatActivity implements Purch
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expensive_checker);
 
-        people = findViewById(R.id.peopleNumExpensiveChecker);
-        purchasesRemaining = findViewById(R.id.purchaseNumExpensiveChecker);
+        TextView people = findViewById(R.id.peopleNumExpensiveChecker);
+        TextView purchasesRemaining = findViewById(R.id.purchaseNumExpensiveChecker);
 
         Random randomPurchase = new Random();
         int valPurc = randomPurchase.nextInt(10);

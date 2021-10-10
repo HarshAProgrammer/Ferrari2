@@ -229,7 +229,6 @@ public class Utils {
                         return NETWORK_TYPE_CELLULAR;
                     }
                 }
-                return NETWORK_TYPE_OTHER;
             } else {
                 boolean isWifi = false;
                 boolean isCellular = false;
@@ -251,8 +250,8 @@ public class Utils {
                     return NETWORK_TYPE_CELLULAR;
                 }
 
-                return NETWORK_TYPE_OTHER;
             }
+            return NETWORK_TYPE_OTHER;
         }
 
         return NETWORK_TYPE_OTHER;

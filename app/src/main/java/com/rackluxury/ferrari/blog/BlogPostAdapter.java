@@ -78,7 +78,7 @@ public class BlogPostAdapter extends RecyclerView.Adapter<BlogPostAdapter.PostVi
         return blogItems.size();
     }
 
-    public class PostViewHolder extends RecyclerView.ViewHolder {
+    public static class PostViewHolder extends RecyclerView.ViewHolder {
         public RelativeLayout blogPostLayout;
         public TextView blogPostTitle;
         public ImageView blogPostImage;

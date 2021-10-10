@@ -55,8 +55,6 @@ public class BlogCheckerActivity extends AppCompatActivity implements PurchasesU
     private FirebaseAuth firebaseAuth;
     private StorageReference storageReference;
     private SharedPreferences prefs;
-    private TextView people;
-    private TextView purchasesRemaining;
 
 
     private BillingClient billingClient;
@@ -71,8 +69,8 @@ public class BlogCheckerActivity extends AppCompatActivity implements PurchasesU
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog_checker);
 
-        people = findViewById(R.id.peopleNumBlogChecker);
-        purchasesRemaining = findViewById(R.id.purchaseNumBlogChecker);
+        TextView people = findViewById(R.id.peopleNumBlogChecker);
+        TextView purchasesRemaining = findViewById(R.id.purchaseNumBlogChecker);
 
         Random randomPurchase = new Random();
         int valPurc = randomPurchase.nextInt(10);

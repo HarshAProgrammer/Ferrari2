@@ -52,8 +52,6 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     CardView sixDashboard;
     CardView sevenDashboard;
     CardView eighthDashboard;
-    private FirebaseAuth firebaseAuth;
-    private FirebaseDatabase firebaseDatabase;
     private long backPressedTime;
     ImageView greetImg;
     TextView greetText;
@@ -132,10 +130,10 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
         StorageReference storageReference = firebaseStorage.getReference();
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         switch (v.getId()) {
             case R.id.homeDashboard:
                 Intent intent = new Intent(DashboardActivity.this, HomeActivity.class);

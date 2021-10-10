@@ -484,7 +484,7 @@ public class Post implements Parcelable {
     }
 
     public boolean isHiddenManuallyByUser() {
-        return isHiddenManuallyByUser;
+        return !isHiddenManuallyByUser;
     }
 
     public String getCrosspostParentId() {

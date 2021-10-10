@@ -93,9 +93,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     private int soundLike;
 
-    private TextView coins2;
     public SharedPreferences coins;
-    private String currentCoins;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private FirebaseAuth firebaseAuth;
     private DatabaseReference mRef;
@@ -176,8 +174,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
         coins = getSharedPreferences("Rewards", MODE_PRIVATE);
-        currentCoins = coins.getString("Coins", "0");
-        coins2 = findViewById(R.id.tvCoinsHome);
+        String currentCoins = coins.getString("Coins", "0");
+        TextView coins2 = findViewById(R.id.tvCoinsHome);
         coins2.setText(currentCoins);
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child(FirebaseAuth.getInstance().getCurrentUser().getUid());

@@ -39,33 +39,25 @@ public class ImageItem {
     public static final Comparator<ImageItem> ByViews = new Comparator<ImageItem>() {
         @Override
         public int compare(ImageItem one, ImageItem two) {
-            int oneViews=one.mViews;
-            int twoViews=two.mViews;
-            return -Integer.compare(oneViews, twoViews);
+            return -Integer.compare(one.mViews, two.mViews);
         }
     };
     public static final Comparator<ImageItem> ByLikes = new Comparator<ImageItem>() {
         @Override
         public int compare(ImageItem one, ImageItem two) {
-            int oneLikes= one.mLikes;
-            int twoLikes= two.mLikes;
-            return -Integer.compare(oneLikes, twoLikes);
+            return -Integer.compare(one.mLikes, two.mLikes);
         }
     };
     public static final Comparator<ImageItem> ByComments = new Comparator<ImageItem>() {
         @Override
         public int compare(ImageItem one, ImageItem two) {
-            int oneComments=one.mComments;
-            int twoComments=two.mComments;
-            return -Integer.compare(oneComments, twoComments);
+            return -Integer.compare(one.mComments, two.mComments);
         }
     };
     public static final Comparator<ImageItem> ByDownloads = new Comparator<ImageItem>() {
         @Override
         public int compare(ImageItem one, ImageItem two) {
-            int oneDownloads=one.mDownloads;
-            int twoDownloads=two.mDownloads;
-            return -Integer.compare(oneDownloads, twoDownloads);
+            return -Integer.compare(one.mDownloads, two.mDownloads);
         }
     };
 }
